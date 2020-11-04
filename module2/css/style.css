@@ -17,12 +17,22 @@
 .subtitle{
     background: dodgerblue;
     color: white;
-    border: 1px solid blue;
     float: right;
     padding: 6px;
     top: 0;
     right: 0;
     position: absolute;
+    border-bottom-left-radius: 5px;
+    box-shadow: 0 0 3px 1px #222222;
+}
+.menu-color1{
+    background: coral;
+}
+.menu-color2{
+    background: gray;
+}
+.menu-color3{
+    background: rgb(107, 29, 42);
 }
 h1{
     text-align: center;
