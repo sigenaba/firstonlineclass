@@ -172,8 +172,8 @@
 
 
     </main>
-</div> <!-- container end -->
 </body>
+</div> <!-- container end -->
 <?php
 if (isset($_GET['m'])) {
     $m = $_GET['m']; ?>
@@ -251,6 +251,6 @@ if (isset($_GET['m'])) {
             confirmButtonColor: '#52C41A',
         })
     }
-</script>
-<?php include "../includes/footer.php";?>
+</script></div>
 </html>
+<?php include "../includes/footer.php";?>
