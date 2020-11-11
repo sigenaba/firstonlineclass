@@ -261,11 +261,10 @@ img.tphot {
   box-sizing: border-box;
   position: absolute;
   color: white;
-  top: 0px;
-  left: 30%;
+  top: 2%;
+  left: 45%;
   text-align: right;
   padding: 0 4px;
-  translate: transform(0, 30%);
   font-size: 20px;
   /*background: linear-gradient(0deg,rgba(255,255,255,0.3),rgba(255,255,255,0.2));*/
   width: 160px;
@@ -278,7 +277,7 @@ img.tphot {
 
 .contenta {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   padding-left: 8px;
   align-items: center;
   border-top-left-radius: 25px;
@@ -288,7 +287,9 @@ img.tphot {
   font-size: 18px;
   color: #f5f5f5;
 }
-
+.contentb:hover{
+  text-decoration: underline;
+}
 .contentb {
   border-bottom-left-radius: 25px;
   border-bottom-right-radius: 25px;
@@ -532,6 +533,9 @@ small {
   display: flex;
   justify-content: center;
 }
+.grid-content {
+  position: relative;
+}
 .print-left,
 .print-right {
   flex: 1;
@@ -560,12 +564,7 @@ small {
   grid-auto-rows: 150px;
   grid-gap: 20px;
 }
-@media (min-width: 600px){
-  #piechart_3d{
-    grid-column: span 3;
-    grid-row: span 2;
-  }
-}
+
 /* ############# end of index grid style ######################################################## */
 .breadcrumbs {
   max-height: 80px;

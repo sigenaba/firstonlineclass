@@ -27,7 +27,7 @@ $coun = mysqli_num_rows($result);
                     <th>ram</th>
                     <th>mobo</th>
                     <th>operating system</th>
-                    <th colspan="2">Action</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -52,7 +52,7 @@ $coun = mysqli_num_rows($result);
                         echo "<td>$f</td>";
                         echo "<td>$g</td>";
                         echo "<td>$h</td>";
-                        echo "<td><a href='$deurl1'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
+                        // echo "<td><a href='$deurl1'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
                         echo "<td><a href='$deurl2'><input type='button' name='userbtnsbmt' value='VIEW'></a></td>";
                         echo "</tr>";
                     }

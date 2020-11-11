@@ -46,6 +46,9 @@
         case 'updatebuyer';
             include "./buyer_update.php";
             break;
+        case 'computersearch';
+            include "./computersearch.php";
+            break;
         default:
             include "computer.php";
             break;

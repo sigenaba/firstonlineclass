@@ -20,14 +20,14 @@ $coun = mysqli_num_rows($result);
             <thead>
                 <tr>
                     <th>ID</th>
-                    <th>Status</th>
+                    <!-- <th>Status</th> -->
                     <th>User</th>
                     <th>cpu</th>
                     <th>hdd</th>
                     <th>ram</th>
                     <th>mobo</th>
                     <th>operating system</th>
-                    <th colspan="2">Action</th>
+                    <th>Action</th>
                 </tr>
             </thead>
             <tbody>
@@ -45,21 +45,21 @@ $coun = mysqli_num_rows($result);
                         $deurl2 = "./currentlyview.php?&curuseid=$a";
                         echo "<tr>";
                         echo "<td>$a</td>";
-                        echo "<td>$b</td>";
+                        // echo "<td>$b</td>";
                         echo "<td>$c</td>";
                         echo "<td>$d</td>";
                         echo "<td>$e</td>";
                         echo "<td>$f</td>";
                         echo "<td>$g</td>";
                         echo "<td>$h</td>";
-                        echo "<td><a href='$deurl1'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
+                        // echo "<td><a href='$deurl1'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
                         echo "<td><a href='$deurl2'><input type='button' name='userbtnsbmt' value='VIEW'></a></td>";
                         echo "</tr>";
                     }
                 }
                 if ($coun < 1) {
                     echo "<tr>";
-                    echo "<td style='color: red;' colspan='9'>No data to be found yet!</td>";
+                    echo "<td style='color: red;' colspan='8'>No data to be found yet!</td>";
                 }
                 ?>
 

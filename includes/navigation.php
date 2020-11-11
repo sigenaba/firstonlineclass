@@ -1,8 +1,8 @@
 <input type="checkbox" id="menu_btn">
 <label for="menu_btn">&#9776;</label>
-<div class="loader-container">
+<!-- <div class="loader-container">
     <div class="loader"></div>
-</div>
+</div> -->
 <nav class="menu">
     <ul>
         <li id="logo"><a href="../index.php"> <img src="../images/sunx_logo.png" alt=""></a></li>

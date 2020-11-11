@@ -1,15 +1,4 @@
 <br />
-<div class="breadcrumbs">
-    <h3>Add entry <?php echo "\ " . $source; ?></h3>
-</div>
-<div class="container-option">
-    <ul class="nav-links">
-        <li><a href="./add_entry.php" class="computerphpbtn"><input type="button" value="Computer Unit"></a></li>
-        <li><a href="./add_entry.php?source=category" class="computerphpbtn"><input type="button" value="Category"></a></li>
-        <li><a href="./add_entry.php?source=items" class="computerphpbtn"><input type="button" value="Items"></a></li>
-        <li><a href="./add_entry.php?source=buyer" class="computerphpbtn"><input type="button" value="Add Buyer"></a></li>
-    </ul>
-</div>
 <br />
 <?php
 $num_per_page = 15;
@@ -164,21 +153,19 @@ if (isset($_POST['submit'])) {
         <div class="wrapper-search-export">
 
             <?php
-                if (isset($_POST['name'])) {
-                    $name = $_POST['name'];
-                    header("location: add_entry.php?source=computersearch&name=$name");
+                if (isset($_GET['name'])) {
+                    $nameid = $_GET['name'];
+                }
+                $result99=$con->query("SELECT * FROM systemunitlist WHERE id=$nameid;")or die($con->error);
+                if(isset($_POST['backtomain'])){
+                    header("location: add_entry.php");
                 }
             ?>
-            <div id="search">
-                <form action="" method="post">
-                    <input type="text" name="name" placeholder="Search ID" accesskey="s"><i class="fas fa-search"></i>
-                </form>
-            </div>
 
-            <div class="exportclass">
-                <form method="post" action="../includes/db.php" id="btnexport">
-                    <input type="submit" name="export1" id="btn-success" value="export" />
-                    <label for="btn-success"><i class="fas fa-file-excel"></i></label>
+            <div id="result">
+                <form action="" method="post">
+                    <input type="text" value="<?php echo $nameid; ?>" accesskey="s">
+                    <input id="result-clear" name="backtomain" type="submit" value="CLEAR">
                 </form>
             </div>
 
@@ -206,7 +193,7 @@ if (isset($_POST['submit'])) {
         </table>
     <?php
                 } else {
-                    while ($row = mysqli_fetch_assoc($result9)) {
+                    while ($row = mysqli_fetch_assoc($result99)) {
                         $a = $row['id'];
                         $b = $row['STATUS'];
                         $c = $row['cpu'];
