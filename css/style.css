@@ -223,6 +223,15 @@ img.tphot {
 /* containers   */
 
 /* ##################################################################################################   */
+
+#map {
+  display: flex;
+  justify-content: center;
+}
+#map iframe {
+  border: 1px solid black;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.6);
+}
 .homepage {
   display: flex;
   justify-content: center;
@@ -234,6 +243,7 @@ img.tphot {
   width: 90%;
   height: auto;
 }
+
 #piechart_3d {
   width: 600px;
   height: 300px;
@@ -322,7 +332,13 @@ img.tphot {
 .content5b {
   border: 1px solid #990099;
 }
-
+.srs {
+  padding-left: 25px;
+  padding-right: 29px;
+}
+.srsa {
+  padding: 0 24px;
+}
 .container {
   display: flex;
   justify-content: center;
@@ -389,14 +405,13 @@ img.tphot {
   width: 300px;
   border-bottom: 1px solid black;
 }
-.preparedby {
-  margin-bottom: 2rem;
-}
 .prep {
   font-size: 18px;
   padding-right: 18px;
 }
-
+.preparedby {
+  padding-bottom: 60px;
+}
 .receiveto {
   padding-top: 60px;
 }
@@ -451,7 +466,7 @@ small {
   margin: 0 auto;
 }
 .fromto {
-  width: 55%;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   height: 40px;
@@ -491,10 +506,16 @@ small {
 }
 #navbar {
   width: 90%;
+  position: relative;
   height: auto;
   margin: 0 auto 5px;
 }
-
+.printed-date {
+  position: absolute;
+  right: 0;
+  font-style: italic;
+  top: -17px;
+}
 #navbar h2 {
   border: 1px solid black;
   margin: 0 auto;
@@ -543,6 +564,8 @@ small {
 #homepage {
   height: 100vh;
   width: 100%;
+  display: flex;
+  justify-content: flex-start;
 }
 
 .container-option {
@@ -574,7 +597,6 @@ small {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  align-items: flex-start;
   margin: 0 auto;
   width: 100%;
 }
@@ -585,11 +607,10 @@ small {
   align-items: flex-start;
   margin: 0 auto;
 }
-.section-left {
+.section-left,
+.section-right {
   width: 100%;
   height: auto;
-  flex: 1;
-  text-align: right;
 }
 
 .btn-del {
@@ -598,10 +619,7 @@ small {
 .btn-del:hover {
   text-decoration: underline;
 }
-.section-right {
-  flex: 1;
-  width: 100%;
-}
+
 .section-left > p,
 .section-right > p {
   letter-spacing: 3px;
@@ -737,27 +755,56 @@ h4 {
   color: white;
   background: dodgerblue;
 }
-
-#btn-success {
+/* .clear{
+  clear: both;
+} */
+.exportclass #btn-success {
+  position: relative;
   border: 1px solid dodgerblue;
   color: blue;
-  padding: 5px 7px;
+  padding: 7px 7px;
   background: white;
-  font-size: 15px;
+  font-size: 17px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
   transition: 0.5s all ease;
 }
-
-.exportclass {
-  display: flex;
-  justify-content: flex-end;
+.wrapper-search-export {
+  position: relative;
+  height: 60px;
   width: 90%;
   margin: 0 auto;
+  align-items: center;
 }
-.exportclass > label > i {
-  font-size: 25px;
+.exportclass {
+  float: right;
+}
+#search {
+  float: left;
+}
+
+.wrapper-search-export #search input[type="text"] {
   position: relative;
-  top: 5px;
+  line-height: 60px;
+  width: 150px;
+  border: 1px solid #d9d9d9;
+  padding-left: 2px;
+  text-align: left;
+}
+#search > i {
+  position: relative;
+  top: 0;
+  left: -23px;
+  color: dodgerblue;
+  line-height: 60px;
+  font-size: 20px;
+}
+#search input[type="text"]:focus + i {
+  opacity: 0;
+}
+.exportclass label > i {
+  position: relative;
+  font-size: 25px;
+  line-height: 60px;
   color: green;
   cursor: pointer;
 }
@@ -787,6 +834,23 @@ h4 {
   color: blue;
   border: blue;
   transition: 0.5s;
+}
+
+.wrapper-result {
+  width: 90%;
+  display: flex;
+  justify-content: flex-start;
+  height: 60px;
+  margin: 0 auto;
+}
+#result input[type="submit"]:hover {
+  background: red;
+  font-weight: 600;
+}
+#result input[type="text"] {
+  position: relative;
+  width: 250px;
+  left: 0;
 }
 
 #selectdropdown1,
@@ -858,6 +922,18 @@ input[type="submit"] {
   border-radius: 1rem;
   margin-bottom: 2rem;
   background: dodgerblue;
+  outline: none;
+  border: none;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 4px 10px 0 rgba(0, 0, 0, 0.19);
+  transition: 0.5s all ease;
+}
+#result-clear {
+  max-width: 300px;
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  background: #d9534f;
   outline: none;
   border: none;
   color: white;
@@ -1255,5 +1331,30 @@ input[type="submit"]:hover,
   }
   #piechart_3d {
     width: 300px;
+  }
+  .wrapper-result {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    height: 30px;
+    margin: 0 auto 4px;
+  }
+  #result {
+    width: 100%;
+    height: 40px;
+  }
+  #result input[type="text"] {
+    border: 1px solid #676767;
+  }
+  #result input[type="text"],
+  #result input[type="submit"] {
+    position: relative;
+    width: 100px;
+    float: left;
+  }
+  #result input[type="submit"] {
+    height: 30px;
+    padding: 7px 3px;
+    margin: 0;
   }
 }

@@ -1,6 +1,5 @@
 <?php include "../includes/header.php"; ?>
 <?php include "../includes/navigation.php"; ?>
-<?php include "../includes/db.php"; ?>
 <div class="container">
     <main class="body">
         <?php
@@ -38,6 +37,21 @@
             case 'currently_use';
                 include "currentlyuse.php";
                 break;
+            case 'search';
+                include "currentlysearch.php";
+                break;
+            case 'searchsold';
+                include "soldunitsearch.php";
+                break;
+            case 'searchreserve';
+                include "reservesearch.php";
+                break;
+            case 'curview';
+                include "currentlyview.php";
+                break;
+            case 'reserview';
+                include "reserview.php";
+                break;
             case 'updateitems';
                 include "items_update.php";
                 break;
@@ -58,5 +72,6 @@
 
     </main>
     <?php include "../includes/footer.php"; ?>
+</div>
 
-    </html>
+</html>

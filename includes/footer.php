@@ -5,7 +5,7 @@
             <ul class="contact">
                 <li>Name: Sunex</li>
                 <li>Email: <u>sdsfx.itdept@gmail.com</u></li>
-                <li>Address: #18E Manalo St. E. Rodriquez Concepcion Uno</li>
+                <li>Address: 2 NE Tanguile St. Fortune, Marikina City</li>
                 <li> Marikina City</li>
             </ul>
         </ul>
