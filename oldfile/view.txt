@@ -1,0 +1,26 @@
+viewname: accessoriesview
+select `a`.`id` AS `id`,`a`.`buyer_name` AS `buyer_name`,`a`.`items_id` AS `items_id`,`a`.`qty` AS `qty`,`a`.`system_id` AS `system_id`,`b`.`item_description` AS `idesc` from (`accessories_sold` `a` join `item_masterfile` `b`) where (`a`.`items_id` = `b`.`id`)	
+
+SELECT O.location_id, I.items_id, P.buyer_name
+FROM system_unit O
+JOIN accessories_sold I ON O.buyer_id = I.buyer_id
+JOIN buyer P ON P.id = I.buyer_id
+
+systemunitlist [id,sold_date,status,cpu,hdd,ram,mobo,os,buyername]
+ID	Status	cpu	hdd	ram	mobo buyer_id
+system_status [id,status]
+system_unit [id,date_checked,location_id,status_id,cpu_id,hdd_id,ram_id,mobo_id,os_id,remarks,
+            designation,mac_address,user,duplicate_date,buyer_id,sold_date]
+item_masterfile [id,item_description,cat_id]
+
+
+SELECT a.id AS id, a.sold_date AS sold_date, b.status AS status, c.item_description AS cpu,
+ d.item_description AS hdd, e.item_description AS ram, f.item_description AS mobo, g.item_description AS os, h.buyer_name AS buyername
+FROM system_unit a
+INNER JOIN system_status b ON b.id = a.status_id
+INNER JOIN item_masterfile c ON c.id = a.cpu_id
+INNER JOIN item_masterfile d ON d.id = a.hdd_id
+INNER JOIN item_masterfile e ON e.id = a.ram_id
+INNER JOIN item_masterfile f ON f.id = a.mobo_id
+INNER JOIN item_masterfile g ON g.id = a.os_id
+LEFT JOIN buyer h ON h.id = a.buyer_id

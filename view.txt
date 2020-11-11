@@ -1,0 +1,10 @@
+systemunitlist
+select `a`.`id` AS `id`,`a`.`sold_date` AS `sold_date`,`a`.`user` AS `user`,`b`.`status` AS `status`,`c`.`item_description` AS `cpu`,`d`.`item_description` AS `hdd`,`e`.`item_description` AS `ram`,`f`.`item_description` AS `mobo`,`g`.`item_description` AS `os`,`h`.`buyer_name` AS `buyername`,`i`.`id` AS `buyer_id` from ((((((((`system_unit` `a` join `system_status` `b` on(`b`.`id` = `a`.`status_id`)) join `item_masterfile` `c` on(`c`.`id` = `a`.`cpu_id`)) join `item_masterfile` `d` on(`d`.`id` = `a`.`hdd_id`)) join `item_masterfile` `e` on(`e`.`id` = `a`.`ram_id`)) join `item_masterfile` `f` on(`f`.`id` = `a`.`mobo_id`)) join `item_masterfile` `g` on(`g`.`id` = `a`.`os_id`)) left join `buyer` `h` on(`h`.`id` = `a`.`buyer_id`)) left join `buyer` `i` on(`i`.`id` = `a`.`buyer_id`))
+
+
+full_item
+select `a`.`id` AS `id`,`a`.`item_description` AS `description`,`b`.`id` AS `catid`,`b`.`category` AS `category` from (`item_masterfile` `a` join `item_category` `b`) where `a`.`cat_id` = `b`.`id`
+
+
+accessoriesview
+select `a`.`system_id` AS `id`,`c`.`buyer_name` AS `buyer_name`,`a`.`items_id` AS `items_id`,`a`.`qty` AS `qty`,`a`.`system_id` AS `system_id`,`b`.`item_description` AS `idesc`,`a`.`status` AS `STATUS` from ((`accessories_sold` `a` join `item_masterfile` `b`) join `buyer` `c`) where `a`.`items_id` = `b`.`id` and `a`.`buyer_id` = `c`.`id` and `a`.`status` <> 'tag'
