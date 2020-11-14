@@ -26,7 +26,7 @@
 
         <li><a href="#"><i class="fas fa-cog"></i> Settings</a>
             <ul class="submenu">
-                <li><a href="./user.php"><i class="fas fa-user-tie"></i></i> Profile</a>
+                <!-- <li><a href="./user.php"><i class="fas fa-user-tie"></i></i> Profile</a> -->
                 <li><a href="./users.php"><i class="fas fa-users"></i> Users</a>
                 <li><a href="./logs.php"><i class="fas fa-dolly"></i> Logs</a>
             </ul>

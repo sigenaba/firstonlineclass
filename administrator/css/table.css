@@ -2,10 +2,10 @@
     table-layout: auto;
     border-collapse: collapse;
     width: 90%;
-    margin: 0 auto;
+    margin: 15px auto 0;
     border-bottom-width: medium;
-    margin-bottom: 15px;
 }
+
 
 thead {
     /* pages>users.php */

@@ -46,7 +46,7 @@ if (isset($_POST['submit2'])) {
     $os = $_POST['os'];
     $remarks = $_POST['remarks'];
     $status_id = 1;
-    $sold_date = date("yy/m/d");
+    $sold_date = date("yy-m-d");
 
     // ? inquire if system_id already exist in accessories_sold ?
     $inquire1 = $con->query("SELECT * FROM accessoriesview where system_id=$x") or die($con->error);

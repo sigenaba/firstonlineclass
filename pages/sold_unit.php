@@ -90,7 +90,11 @@ $result = $con->query("SELECT * FROM systemunitlist WHERE status='SOLD' order by
                 echo "<a href='computer_menu.php?source=sold&page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
             }
             for ($i = 1; $i <= $total_pages; $i++) {
-                echo "<a href='computer_menu.php?source=sold&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                if($i==$page){
+                    echo "<a style='background: #00FF00;' href='computer_menu.php?source=sold&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                }else{
+                    echo "<a href='computer_menu.php?source=sold&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                }
             }
             if ($i > $page) {
                 echo "<a href='computer_menu.php?source=sold&page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";

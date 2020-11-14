@@ -87,7 +87,11 @@ $coun = mysqli_num_rows($result);
                 echo "<a href='computer_menu.php?source=reserve&page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
             }
             for ($i = 1; $i <= $total_pages; $i++) {
-                echo "<a href='computer_menu.php?source=reserve&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                if($i==$page){
+                    echo "<a style='background: #00FF00;' href='computer_menu.php?source=reserve&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                }else{
+                    echo "<a href='computer_menu.php?source=reserve&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                }
             }
             if ($i > $page) {
                 echo "<a href='computer_menu.php?source=reserve&page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";

@@ -47,7 +47,7 @@ $coun = mysqli_num_rows($result);
                         $h = $row['os'];
                         $i = $row['sold_date'];
                         $deurl1 = "./computer_menu.php?source=soldupdate&cid=$a";
-                        $deurl2 = "./soldunitview.php?&curuseid=$a";
+                        $deurl2 = "./soldpreview.php?cid=$a";
                         echo "<tr>";
                         echo "<td>$a</td>";
                         // echo "<td>$b</td>";
@@ -59,7 +59,7 @@ $coun = mysqli_num_rows($result);
                         echo "<td>$g</td>";
                         echo "<td>$h</td>";
                         echo "<td><a href='$deurl1'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
-                        echo "<td><a href='$deurl2'><input type='button' name='userbtnsbmt' value='VIEW'></a></td>";
+                        echo "<td><a href='$deurl2' target='_blank'><input type='button' name='userbtnsbmt' value='VIEW'></a></td>";
                         echo "</tr>";
                     }
                 }

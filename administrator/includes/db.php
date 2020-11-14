@@ -24,7 +24,7 @@ if (isset($_POST["export1"])) {
             $output .= '
                     <tr>  
                          <td>' . $row["id"] . '</td>  
-                         <td>' . $row["status"] . '</td>  
+                         <td>' . $row["STATUS"] . '</td>  
                          <td>' . $row["cpu"] . '</td>  
                          <td>' . $row["hdd"] . '</td>  
                          <td>' . $row["ram"] . '</td>  
@@ -133,7 +133,7 @@ if (isset($_POST["export4"])) {
             $output .= '
                     <tr>  
                          <td>' . $row["id"] . '</td>  
-                         <td>' . $row["status"] . '</td>  
+                         <td>' . $row["STATUS"] . '</td>  
                          <td>' . $row["cpu"] . '</td>  
                          <td>' . $row["hdd"] . '</td>  
                          <td>' . $row["ram"] . '</td>  

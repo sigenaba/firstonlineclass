@@ -678,7 +678,9 @@ h4 {
 /* inputs   */
 
 /* ##################################################################################################   */
-
+#oho{
+  width: 100%;
+}
 .soldupdate > input[type="submit"] {
   padding: 10px;
   border-radius: 4px;
@@ -1292,7 +1294,6 @@ input[type="submit"]:hover,
   .erem {
     width: 90%;
     margin: 0 auto;
-    background: green;
   }
   .computerphp_input input[type="text"] {
     width: 80%;
@@ -1356,5 +1357,8 @@ input[type="submit"]:hover,
     height: 30px;
     padding: 7px 3px;
     margin: 0;
+  }
+  #oho{
+    width: 300px;
   }
 }

@@ -192,7 +192,7 @@ if (isset($_POST['submit'])) {
                 } else {
                     while ($row = mysqli_fetch_assoc($result9)) {
                         $a = $row['id'];
-                        $b = $row['status'];
+                        $b = $row['STATUS'];
                         $c = $row['cpu'];
                         $d = $row['hdd'];
                         $e = $row['ram'];

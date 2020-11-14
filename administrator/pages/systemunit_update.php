@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
     $input_m = mysqli_real_escape_string($con, $input_m);
     $input_n = date("yy/m/d");
 
-    if ($l < 1 && $input_c > 1) {
+    if ($l < 1 && $c > 1) {
         $query = "UPDATE system_unit SET ";
         $query .= "date_checked='$input_a', location_id=$input_b, status_id=$input_c,";
         $query .= "cpu_id=$input_d, hdd_id=$input_e, ram_id=$input_f, mobo_id=$input_g, remarks='$input_m',";
@@ -66,7 +66,7 @@ if (isset($_POST['submit'])) {
         $query .= "sold_date='$input_m'";
         $query .= " WHERE id=$x";
         $result = mysqli_query($con, $query);
-        $su = $con->query("UPDATE system_unit SET buyer_id=0") or die($con->error);
+        $su = $con->query("UPDATE system_unit SET buyer_id=0 WHERE id=$x") or die($con->error);
         if (!$result) {
             die("Query Failed! " . mysqli_error($con));
         }

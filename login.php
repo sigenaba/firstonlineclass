@@ -26,7 +26,7 @@ if (isset($_POST['login'])) {
     }
 
     // (if) checking if password matches from the database
-    if ($db_password == $password && $db_user_role === 'admin') {
+    if ($db_password == $password) {
         header("location:./pages/index.php");
 
         // Assigning SESSION name

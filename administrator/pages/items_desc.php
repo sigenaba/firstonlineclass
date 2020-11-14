@@ -29,84 +29,88 @@ if (isset($_POST['submit'])) {
 ?>
 <div class="section-container">
     <div class="section-left">
-            <form action="" method="post" class="thisform">
-                <center>
-                    <H3 class="systemspec">Items Description</h3><br /><br />
-                </center>
-                <center> <span class="error"><?php echo $itemErr; ?></span></center>
-                <input type="text" name="description" placeholder="Enter Description" autofocus required>
-                <br><br><br />
-                <select name="categoryid" id="selectdropdown15" style="min-width: 200px; class="form-control select2" class="option" required>
-                    <option value="" disabled selected>Choose Category</option>
-                    <?php
-                    $result2 = $con->query("SELECT * FROM item_category") or die($con->error);
-                    while ($row = mysqli_fetch_assoc($result2)) {
-                        $dbid = $row['id'];
-                        $db_cat = $row['category'];
-                        echo "<option value='$dbid'>$db_cat</option>";
-                    }
-                    ?>
-                </select>
-                <br><br><br />
-                <input type="submit" name="submit" value="Add Item">
-            </form>
+        <form action="" method="post" class="thisform">
+            <center>
+                <H3 class="systemspec">Items Description</h3><br /><br />
+            </center>
+            <center> <span class="error"><?php echo $itemErr; ?></span></center>
+            <input type="text" name="description" placeholder="Enter Description" autofocus required>
+            <br><br><br />
+            <select name="categoryid" id="selectdropdown15" style="min-width: 200px;" class=" form-control select2" class="option" required>
+                <option value="" disabled selected>Choose Category</option>
+                <?php
+                $result2 = $con->query("SELECT * FROM item_category") or die($con->error);
+                while ($row = mysqli_fetch_assoc($result2)) {
+                    $dbid = $row['id'];
+                    $db_cat = $row['category'];
+                    echo "<option value='$dbid'>$db_cat</option>";
+                }
+                ?>
+            </select>
+            <br><br><br />
+            <input type="submit" name="submit" value="Add Item">
+        </form>
     </div>
 
     <div class="section-right">
-            <table class="table-sortable" border=1>
+        <table class="table-sortable" border=1>
             <form method="post" action="../includes/db.php" id="btnexport">
-                    <span class="exportclass">
-                        <input type="submit" name="export2" id="btn-success" value="Export" />
-                        <label for="btn-success"><i class="fas fa-file-excel"></i></label>
-                    </span>
-                </form>
-                <thead>
-                    <tr>
-                        <th>ID</th>
-                        <th>Product Description</th>
-                        <th>Category</th>
-                        <th align="center">Action</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <?php
-
-                    while ($row = mysqli_fetch_assoc($item_result)) {
-                        $db_id = $row['id'];
-                        $db_desc = $row['item_description'];
-                        $db_catid = $row['cat_id'];
-                        $db_category = $row['category'];
-                        $deurl = "./add_entry.php?source=updateitems&cid=$db_id";
-
-                        echo "<tr>";
-                        echo "<td>$db_id</td>";
-                        echo "<td>$db_desc</td>";
-                        echo "<td>$db_category</td>";
-                        echo "<td><a href='$deurl' class='userbtn'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
-                        // echo "<td><a href='$deurl' class='userbtn'><input type='button' name='userbtnsbmt' value='DEL'></a></td>";
-                        echo "</tr>";
-                    }
-                    ?>
-                </tbody>
-            </table>
-            <div class="pager-section">
+                <span class="exportclass">
+                    <input type="submit" name="export2" id="btn-success" value="Export" />
+                    <label for="btn-success"><i class="fas fa-file-excel"></i></label>
+                </span>
+            </form>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Product Description</th>
+                    <th>Category</th>
+                    <th align="center">Action</th>
+                </tr>
+            </thead>
+            <tbody>
                 <?php
-                $result = $con->query("SELECT a.id,a.item_description,a.cat_id,b.category FROM item_masterfile a,item_category b where a.cat_id=b.id") or die($con->error);
-                $total_records = mysqli_num_rows($result);
-                $total_pages = ceil($total_records / $num_per_page);
-                if ($page > 1) {
-                    echo "<a href='add_entry.php?source=items&page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
-                }
-                for ($i = 1; $i <= $total_pages; $i++) {
-                    echo "<a href='add_entry.php?source=items&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
-                }
-                if ($i > $page) {
-                    echo "<a href='add_entry.php?source=items&page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";
+
+                while ($row = mysqli_fetch_assoc($item_result)) {
+                    $db_id = $row['id'];
+                    $db_desc = $row['item_description'];
+                    $db_catid = $row['cat_id'];
+                    $db_category = $row['category'];
+                    $deurl = "./add_entry.php?source=updateitems&cid=$db_id";
+
+                    echo "<tr>";
+                    echo "<td>$db_id</td>";
+                    echo "<td>$db_desc</td>";
+                    echo "<td>$db_category</td>";
+                    echo "<td><a href='$deurl' class='userbtn'><input type='button' name='userbtnsbmt' value='EDIT'></a></td>";
+                    // echo "<td><a href='$deurl' class='userbtn'><input type='button' name='userbtnsbmt' value='DEL'></a></td>";
+                    echo "</tr>";
                 }
                 ?>
-               
-            </div>
-            <br/>
+            </tbody>
+        </table>
+        <div class="pager-section">
+            <?php
+            $result = $con->query("SELECT a.id,a.item_description,a.cat_id,b.category FROM item_masterfile a,item_category b where a.cat_id=b.id") or die($con->error);
+            $total_records = mysqli_num_rows($result);
+            $total_pages = ceil($total_records / $num_per_page);
+            if ($page > 1) {
+                echo "<a href='add_entry.php?source=items&page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
+            }
+            for ($i = 1; $i <= $total_pages; $i++) {
+                if ($i == $page) {
+                    echo "<a style='background:#00FF00;' href='add_entry.php?source=items&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                } else {
+                    echo "<a href='add_entry.php?source=items&page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                }
+            }
+            if ($i > $page) {
+                echo "<a href='add_entry.php?source=items&page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";
+            }
+            ?>
+
+        </div>
+        <br />
     </div>
 </div>
 <!--section-container end -->
@@ -201,4 +205,3 @@ and select2.min.css  -->
         })
     }
 </script>
-

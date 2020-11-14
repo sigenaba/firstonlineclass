@@ -20,10 +20,12 @@
                 $aa = $crow['id'];
                 $bb = $crow['user'];
                 $cc = $crow['cpu'];
-                $dd = $crow['mobo'];
-                $ee = $crow['mac_address'];
-                $ff = $crow['os'];
-                $gg = $crow['buyer_id'];
+                $dd = $crow['hdd'];
+                $ee = $crow['mobo'];
+                $ff = $crow['ram'];
+                $gg = $crow['mac_address'];
+                $hh = $crow['os'];
+                $ii = $crow['buyer_id'];
             }
             $result3 = $con->query("SELECT user,remarks from system_unit where id=$x") or die($con->error);
             while ($ro = mysqli_fetch_assoc($result3)) {
@@ -55,12 +57,16 @@
             <p><?php echo $bb; ?><br /><br /></p>
             <span class="curview">CPU: </span><br />
             <p><?php echo $cc; ?><br /><br /></p>
-            <span class="curview">MOTHERBOARD: </span><br />
+            <span class="curview">Hard Disk Drive: </span><br />
             <p><?php echo $dd; ?><br /><br /></p>
-            <span class="curview">Mac Address: </span><br />
+            <span class="curview">MOTHERBOARD: </span><br />
             <p><?php echo $ee; ?><br /><br /></p>
-            <span class="curview">OPERATING SYSTEM: </span><br />
+            <span class="curview">RAM: </span><br />
             <p><?php echo $ff; ?><br /><br /></p>
+            <span class="curview">Mac Address: </span><br />
+            <p><?php echo $gg; ?><br /><br /></p>
+            <span class="curview">OPERATING SYSTEM: </span><br />
+            <p><?php echo $hh; ?><br /><br /></p>
             <span class="curview">REMARKS: </span><br />
             <p>
                 <h4><?php echo $rem; ?></h4><br />

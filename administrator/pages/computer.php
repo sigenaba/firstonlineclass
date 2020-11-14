@@ -12,13 +12,13 @@
 </div>
 <br />
 <?php
-$num_per_page = 15;
+$num_per_page = 20;
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
 } else {
     $page = 1;
 }
-$start_from = ($page - 1) * 15;
+$start_from = ($page - 1) * $num_per_page;
 $result9 = $con->query("SELECT * FROM systemunitlist order by id asc limit $start_from,$num_per_page") or die($con->error);
 if (isset($_POST['submit'])) {
     $a = date("yy/m/d");
@@ -237,13 +237,20 @@ if (isset($_POST['submit'])) {
                     $result = $con->query("SELECT * FROM systemunitlist") or die($con->error);
                     $total_records = mysqli_num_rows($result);
                     $total_pages = ceil($total_records / $num_per_page);
+                    // $total_pages = floor($total_records / $num_per_page);
                     if ($page > 1) {
                         echo "<a href='add_entry.php?page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
                     }
                     for ($i = 1; $i <= $total_pages; $i++) {
-                        echo "<a href='add_entry.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
-                    }
-                    if ($i > $page) {
+                        if($i==$page){
+                            echo "<a style='background: #00ff00;' href='add_entry.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+                        }
+                        else {
+                               echo "<a href='add_entry.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
+
+                            }
+                        }
+                    if ($i = $total_pages) {
                         echo "<a href='add_entry.php?page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";
                     }
             ?>

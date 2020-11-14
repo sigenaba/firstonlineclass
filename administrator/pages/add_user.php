@@ -35,14 +35,22 @@ if (isset($_POST['submit'])) {
                 <div class="useravatar"><img src="../../images/bg4.jpg"></div>
                 <br />
                 <label for="Username">Username</label><br /><span class="error"><?php echo $nameErr; ?></span>
-                <input type="text" name="name" required placeholder="Enter Username">
-                <input type="password" name="password" required placeholder="Enter Password">
+                <input type="text" autocomplete="off" name="name" required placeholder="Enter Username">
+                <input type="password" autocomplete="off" name="password" required placeholder="Enter Password">
                 <input type="email" name="user_email" value="example@example.com" required>
                 <br />
                 <input type="file" id="uploadimage" name="photo" required>
                 <label for="uploadimage">Upload Image</label><br />
                 <br />
-                <input type="text" name="user_role" required placeholder="Enter Restriction">
+                <br />
+                <div class="selections">
+                    <select name="meow" style="width: 60%;" id="" class="form-control select2" class="option">
+                        <option value="subscriber" disable selected>Choose Restriction</option>
+                        <option value="admin">admin</option>
+                        <option value="subscriber">subscriber</option>
+                    </select>
+                </div>
+                <!-- <input type="text" name="user_role" required placeholder="Enter Restriction"> -->
                 <br />
                 <input type="submit" name="submit" value="Add User" class="userbtn">
             </form>
@@ -89,3 +97,11 @@ if (isset($_POST['submit'])) {
     </div>
 </div> <!-- end of section-container-->
 <script src="..js/table.js"> </script>
+<script src="../css/jquery-3.1.1.js"></script>
+<script src="../css/select2.full.min.js"></script>
+<script>
+    $(function() {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+    })
+</script>

@@ -73,6 +73,42 @@
             <div class="content6">
                 <?Php
                 $datetime = date("yy-m-d");
+                $grossamount = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALAGOT%'") or die($conn->error);
+                while ($grss = mysqli_fetch_assoc($grossamount)) {
+                    $rsobalagot = $grss['rso'];
+                    $rsogross = $grss['gross'];
+                }
+                $grossamount2 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'PEDRO%'") or die($conn->error);
+                while ($grss2 = mysqli_fetch_assoc($grossamount2)) {
+                    $rsopep = $grss2['rso'];
+                    $rsogross2 = $grss2['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount2) < 1) {
+                    $rsopep = 'PEPING';
+                    $rsogross2 = 0;
+                }
+                $grossamount3 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'LOGISTIC%'") or die($conn->error);
+                while ($grss3 = mysqli_fetch_assoc($grossamount3)) {
+                    // $rsoother = $grss3['rso'];
+                    $rsoother = "TRANSACTED BY ALLAN";
+                    $rsogross3 = $grss3['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount3) < 1) {
+                    $rsoother = 'LOGISTICS';
+                    $rsogross3 = 0;
+                }
+                $grossamount4 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'TANGLAO%'") or die($conn->error);
+                while ($grss4 = mysqli_fetch_assoc($grossamount4)) {
+                    $rsorochelle = $grss4['rso'];
+                    $rsogross4 = $grss4['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount4) < 1) {
+                    $rsorochelle = 'ROCHELLE';
+                    $rsogross4 = 0;
+                }
                 ?>
                 <script type="text/javascript">
                     google.charts.load("current", {
@@ -83,11 +119,10 @@
                     function drawChart() {
                         var data = google.visualization.arrayToDataTable([
                             ['RSO', 'Gross amount'],
-                            ['Peping', 11],
-                            ['Angie', 2],
-                            ['Mike', 2],
-                            ['Roger', 2],
-                            ['Rochelle', 7]
+                            ['<?php echo $rsobalagot; ?>', <?php echo $rsogross; ?>],
+                            ['<?php echo $rsopep; ?>', <?php echo $rsogross2; ?>],
+                            ['<?php echo $rsorochelle; ?>', <?php echo $rsogross4; ?>],
+                            ['<?php echo $rsoother; ?>', <?php echo $rsogross3; ?>]
                         ]);
 
                         var options = {
@@ -99,7 +134,9 @@
                         chart.draw(data, options);
                     }
                 </script>
-                <div id="piechart_3d"></div>
+                <a href="rsosales.php">
+                    <div id="piechart_3d"></div>
+                </a>
             </div>
             <iframe style="width: 100%; height: 500px;" src="http://us1.rssfeedwidget.com/getrss.php?time=1604911308721&amp;x=https%3A%2F%2Fdata.gmanetwork.com%2Fgno%2Frss%2Fscitech%2Fweather%2Ffeed.xml&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12">
                 Weather Report

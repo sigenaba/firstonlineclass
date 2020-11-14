@@ -10,7 +10,7 @@
 
 function auth()
 {
-    if (!isset($_SESSION['username']) || (trim($_SESSION['username']) == '')) {
+    if (!isset($_SESSION['username']) || ($_SESSION['user_role']=='subscriber')) {
         header("location: ../index.php");
         exit();
     }

@@ -4,13 +4,51 @@
 <main class="body">
     <h2 class="contact">Contact Info</h2>
     <br />
-    <p class="pageindex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, maxime!</p>
+    <?Php
+                $datetime = date("yy-m-d");
+                $grossamount = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALAGOT%'") or die($conn->error);
+                while ($grss = mysqli_fetch_assoc($grossamount)) {
+                    $rsobalagot = $grss['rso'];
+                    $rsogross = $grss['gross'];
+                }
+                echo "<h2>$rsogross</h2><br/>";
+                $grossamount2 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'PEDRO%'") or die($conn->error);
+                while ($grss2 = mysqli_fetch_assoc($grossamount2)) {
+                    $rsopep = $grss2['rso'];
+                    $rsogross2 = $grss2['gross'];
+                }
+                
+                if (mysqli_num_rows($grossamount2) < 1) {
+                    $rsopep = 'PEPING';
+                    $rsogross2 = 0;
+                }
+                echo "<h2>$rsogross2</h2><br/>";
+                $grossamount3 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'LOGISTIC%'") or die($conn->error);
+                while ($grss3 = mysqli_fetch_assoc($grossamount3)) {
+                    $rsoother = $grss3['rso'];
+                    $rsogross3 = $grss3['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount3) < 1) {
+                    $rsoother = 'LOGISTICS';
+                    $rsogross3 = 0;
+                }
+                echo "<h2>$rsogross3</h2><br/>";
+                $grossamount4 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'TANGLAO%'") or die($conn->error);
+                while ($grss4 = mysqli_fetch_assoc($grossamount3)) {
+                    $rsorochelle = $grss4['rso'];
+                    $rsogross4 = $grss4['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount4) < 1) {
+                    $rsorochelle = 'ROCHELLE';
+                    $rsogross4 = 0;
+                }
+                echo "<h2>$rsogross4</h2><br/>";
+                ?>
     <br />
     <br />
-    <div id="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d3246.111098579588!2d121.12268714599566!3d14.638994461000394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e0!4m0!4m3!3m2!1d14.6384856!2d121.1218172!5e0!3m2!1sen!2sph!4v1590003525609!5m2!1sen!2sph" width=650 height=350 frameborder="0" style="border:5;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
-    </div>
-    <?php include "../includes/footer.php"; ?>
+    
 </main>
 
 <?php include "../includes/footer.php"; ?>

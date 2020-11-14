@@ -9,7 +9,11 @@
         <li><a href="./index.php"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
         <li><a href="#">Reports <i class="fas fa-arrow-alt-circle-down"></i></a>
             <ul>
-                <!-- <li><a href="./system-unit.php"><i class="fas fa-desktop"></i> For Sale System Unit</a> -->
+                <?php
+                if($_SESSION['user_role']=='admin') :?>
+                    <li><a href="../administrator/pages/add_entry.php"><i class="fas fa-desktop"></i> Add/Input(admin)</a>
+                <?php endif; ?>
+
                 <li><a href="./disposals.php"><i class="fas fa-recycle"></i> Disposals Monitoring</a>
                 <li><a href="./accessories.php"><i class="fas fa-keyboard"></i> Accessories Monitoring</a>
                 <li><a href="./computer_menu.php"><i class="far fa-clipboard"></i> Computer Unit</a>
@@ -22,6 +26,11 @@
             <li><a href="./gatepass_form.php"><i class="far fa-hand-lizard"></i> Gatepass</a>
                 <li><a href="./ot-form.php"><i class="fas fa-hourglass-half"></i> O.T Form</a>
                 <li><a href="./pull-out.php"><i class="fas fa-sign-out-alt"></i> Pull-out/Outgo</a>
+            </ul>
+        </li>
+        <li><a href="#"><i class="fas fa-cog"></i> Settings</a>
+            <ul class="submenu">
+                <li><a href="./profile.php"><i class="fas fa-user-tie"></i></i> Profile</a>               
             </ul>
         </li>
 
