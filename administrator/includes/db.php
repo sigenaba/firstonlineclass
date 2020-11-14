@@ -264,3 +264,46 @@ if (isset($_POST["export7"])) {
         echo $output;
     }
 }
+
+
+
+// from pages>rsosales.php
+if (isset($_POST["export8"])) {
+    $conn=new mysqli('localhost','root','','sunex')or die($conn->error);
+    $result8 = $conn->query("SELECT invoice,date,rsoname,barcode,items_description,price,qty,amount FROM temp_sales_order") or die($conn->error);
+    if (mysqli_num_rows($result8) > 0) {
+        $output .= '
+   <table class="table" bordered="1">  
+                <tr>
+                    <thead>  
+                        <th>Invoice #</th>
+                        <th>Date</th>
+                        <th>RSO</th>
+                        <th>Barcode</th>
+                        <th>Items Description</th>
+                        <th>Price</th>
+                        <th>Qty</th>
+                        <th>Amount</th>
+                    </thead>
+                </tr>
+            ';
+        while ($row = mysqli_fetch_array($result8)) {
+            $output .= '
+                    <tr>  
+                         <td>' . $row["invoice"] . '</td>  
+                         <td>' . $row["date"] . '</td>  
+                         <td>' . $row["rsoname"] . '</td>  
+                         <td>' . $row["barcode"] . '</td>  
+                         <td>' . $row["items_description"] . '</td>  
+                         <td>' . $row["price"] . '</td>
+                         <td>' . $row["qty"] . '</td>
+                         <td>' . $row["amount"] . '</td>
+                    </tr>
+            ';
+        }
+        $output .= '</table>';
+        header('Content-Type: application/xls');
+        header('Content-Disposition: attachment; filename=item_sold.xls');
+        echo $output;
+    }
+}

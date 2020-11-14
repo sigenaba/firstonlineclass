@@ -45,6 +45,10 @@ td {
     padding: 8px 3px;
     text-align: center;
 }
+.rsosales>tr>td:nth-last-child(4){
+    text-align: left !important;
+    padding-left: 3px !important;
+}
 
 .tdimage {
     width: 10px;

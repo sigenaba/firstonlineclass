@@ -78,6 +78,10 @@
                     $rsobalagot = $grss['rso'];
                     $rsogross = $grss['gross'];
                 }
+                if (mysqli_num_rows($grossamount) < 1) {
+                    $rsobalagot = 'BALGOT';
+                    $rsogross = 0;
+                }
                 $grossamount2 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'PEDRO%'") or die($conn->error);
                 while ($grss2 = mysqli_fetch_assoc($grossamount2)) {
                     $rsopep = $grss2['rso'];
@@ -109,6 +113,16 @@
                     $rsorochelle = 'ROCHELLE';
                     $rsogross4 = 0;
                 }
+                $grossamount5 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALASSU%'") or die($conn->error);
+                while ($grss5 = mysqli_fetch_assoc($grossamount5)) {
+                    $rsobalassu = $grss5['rso'];
+                    $rsogross5 = $grss5['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount5) < 1) {
+                    $rsobalassu = 'BALASSU';
+                    $rsogross5 = 0;
+                }
                 ?>
                 <script type="text/javascript">
                     google.charts.load("current", {
@@ -122,6 +136,7 @@
                             ['<?php echo $rsobalagot; ?>', <?php echo $rsogross; ?>],
                             ['<?php echo $rsopep; ?>', <?php echo $rsogross2; ?>],
                             ['<?php echo $rsorochelle; ?>', <?php echo $rsogross4; ?>],
+                            ['<?php echo $rsobalassu; ?>', <?php echo $rsogross5; ?>],
                             ['<?php echo $rsoother; ?>', <?php echo $rsogross3; ?>]
                         ]);
 
