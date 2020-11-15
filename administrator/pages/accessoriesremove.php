@@ -2,8 +2,6 @@
 if (isset($_GET['sid'])) {
     $a = $_GET['sid'];
     $b = $_GET['itemsid'];
-    echo "<h2> $a<br/></h2>";
-    echo "<h2> $b<br/></h2>";
     $result = $con->query("UPDATE accessories_sold SET status='tag' WHERE system_id=$a and items_id=$b") or die($con->errror);
     // $page = $_SERVER['PHP_SELF'];
     // $sec = "3";

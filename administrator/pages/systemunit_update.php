@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
     $input_m = $_POST['remarks'];
     $input_m = mysqli_real_escape_string($con, $input_m);
     $input_n = date("yy/m/d");
-
+//status: 1=sold, 2=reserve, 3=currently use, 4=for sales, 5=defective
     if ($l < 1 && $c > 1) {
         $query = "UPDATE system_unit SET ";
         $query .= "date_checked='$input_a', location_id=$input_b, status_id=$input_c,";
@@ -50,7 +50,9 @@ if (isset($_POST['submit'])) {
         }
         header("location: add_entry.php?status=record-update");
     }
-    if ($l > 1 && $input_c < 2) {
+    // * kung sold ang status and then i-edit mo magiging orphan record yung data ng accessories_sold
+    // TODO: to avoid orphan record from accessories_sold empty all the records that aggregate to cetain id
+    if ($l < 1 && $input_c == 1) {
 
         $asi = $con->query("SELECT * FROM accessories_sold WHERE buyer_id=$x");
         while ($rowasi = mysqli_fetch_assoc($asi)) {
@@ -72,7 +74,7 @@ if (isset($_POST['submit'])) {
         }
         header("location: add_entry.php?status=record-update");
     }
-    if ($l < 1 && $input_c < 2) {
+    if ($c <> 1 && $input_c == 1) {
         echo "<script language='javascript'>alert('Editing Status to SOLD not on this page, FOR SALE page will')</script>";
         echo "<script>window.location.href='computer_menu.php';</script>";
     }

@@ -13,12 +13,14 @@
 
         <h3 class="modal__heading">Specifications</h3>
         <?php
+        
         if (isset($_GET['curuseid'])) {
             $x = $_GET['curuseid'];
             $result2 = $con->query("SELECT * FROM systemunitlist WHERE id=$x") or die($con->error);
             while ($crow = mysqli_fetch_assoc($result2)) {
                 $aa = $crow['id'];
                 $bb = $crow['user'];
+                $bb = strtolower($bb);
                 $cc = $crow['cpu'];
                 $dd = $crow['ram'];
                 $ee = $crow['hdd'];
@@ -31,15 +33,18 @@
             while ($ro = mysqli_fetch_assoc($result3)) {
                 $rem = $ro['remarks'];
                 $upic = $ro['user'];
+                $upic = strtolower($upic);
             }
-            $result4 = $con->query("SELECT * FROM buyer WHERE buyer_name='$bb'") or die($con->error);
+            $result4 = $con->query("SELECT * FROM buyer WHERE buyer_name like '$bb%'") or die($con->error);
             while ($roo = mysqli_fetch_assoc($result4)) {
                 $buyerphoto = $roo['buyer_photo'];
+                $buyerphoto =strtolower($buyerphoto);
             }
         }
 
         ?>
         <?php
+        
         if (empty($buyerphoto)) { ?>
             <div class="curviewphoto">
                 <img src="../../images/uploaded_image/<?php echo $upic . '.png'; ?>" alt="">

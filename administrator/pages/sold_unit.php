@@ -35,7 +35,7 @@ $result = $con->query("SELECT * FROM systemunitlist WHERE status='SOLD' order by
 
             <thead>
                 <tr>
-                    <th>ID</th>
+                    <!-- <th>ID</th> -->
                     <!-- <th>Status</th> -->
                     <th>Buyer</th>
                     <th>Sold date</th>
@@ -62,7 +62,7 @@ $result = $con->query("SELECT * FROM systemunitlist WHERE status='SOLD' order by
                     $deurl = "./computer_menu.php?source=soldupdate&cid=$a";
                     $deurl2 = "./soldpreview.php?cid=$a";
                     echo "<tr>";
-                    echo "<td>$a</td>";
+                    // echo "<td>$a</td>";
                     // echo "<td>$b</td>";
                     echo "<td>$c</td>";
                     echo "<td>$i</td>";
@@ -76,7 +76,7 @@ $result = $con->query("SELECT * FROM systemunitlist WHERE status='SOLD' order by
                 }  ?><?php
                         if (mysqli_num_rows($result) < 1) : ?>
                 <tr>
-                    <td colspan="8" style="color: red;">No data found yet!</td>
+                    <td colspan="7" style="color: red;">No data found yet!</td>
                 </tr>
             <?php endif; ?>
             </tbody>

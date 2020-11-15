@@ -68,13 +68,13 @@ if (isset($_POST['submit2'])) {
         // ? is all status = save ?
         if ($count2 == 0 && $count1 > $count2) {
             // todo: if it is then do this instead (record 0 updated)
-            $save = $con->query("UPDATE system_unit SET buyer_id=$byer_id,os_id=$os,status_id=$status_id,sold_date='$sold_date' WHERE id=$x") or die($con->error);
+            $save = $con->query("UPDATE system_unit SET buyer_id=$byer_id,os_id=$os,status_id=$status_id WHERE id=$x") or die($con->error);
             header("location: computer_menu.php?source=soldupdate&cid=$x&m=4");
         }
         if ($count1 > $count2 && $count2 <> 0) {
             // ? is status has save and unsave ?
             // todo: if it is then do this instead (Rec updated successfully)
-            $save = $con->query("UPDATE system_unit SET buyer_id=$byer_id,remarks='$remarks',os_id=$os,status_id=$status_id,sold_date='$sold_date' WHERE id=$x") or die($con->error);
+            $save = $con->query("UPDATE system_unit SET buyer_id=$byer_id,remarks='$remarks',os_id=$os,status_id=$status_id WHERE id=$x") or die($con->error);
             $updateas = $con->query("UPDATE accessories_sold SET status='save' WHERE system_id=$x and status!='tag'") or die($con->error);
             header("location: computer_menu.php?source=soldupdate&cid=$x&m=5");
         }

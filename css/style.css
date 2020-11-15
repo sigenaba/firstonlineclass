@@ -235,6 +235,7 @@ img.tphot {
   border: 1px solid black;
   box-shadow: 2px 4px rgba(0, 0, 0, 0.6);
 }
+
 .homepage {
   display: flex;
   justify-content: center;
