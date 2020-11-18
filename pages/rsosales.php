@@ -72,8 +72,8 @@ if (isset($_POST['name'])) {
                 echo "<td>$c</td>";
                 echo "<td>$d</td>";
                 echo "<td>$e</td>";
-                echo "<td>$g</td>";
                 echo "<td>$f</td>";
+                echo "<td>$g</td>";
                 echo "<td>$h</td>";
                 echo "</tr>";
             } ?>
