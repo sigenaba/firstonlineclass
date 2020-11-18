@@ -7,7 +7,7 @@
     </div>
     <?php
     $conn = new mysqli('localhost', 'root', '', 'sunex') or die($conn->error);
-    $result = $conn->query("SELECT * FROM temp_sales_order") or die($conn->error); 
+    $result = $conn->query("SELECT * FROM ttemp_sales_order") or die($conn->error); 
 $num_per_page = 20;
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -17,9 +17,9 @@ if (isset($_GET['page'])) {
 if(isset($_GET['name'])){
     $item=$_GET['name'];
 }
-$resultitem=$conn->query("SELECT * FROM temp_sales_order WHERE items_description like '%$item%'")or die($conn->error);
+$resultitem=$conn->query("SELECT * FROM ttemp_sales_order WHERE items_description like '%$item%'")or die($conn->error);
 $start_from = ($page - 1) * 20;
-$result = $conn->query("SELECT * FROM temp_sales_order order by rsoname asc limit $start_from,$num_per_page") or die($conn->error); ?>
+$result = $conn->query("SELECT * FROM ttemp_sales_order order by rsoname asc limit $start_from,$num_per_page") or die($conn->error); ?>
     <table class='table-sortable' border=1>
     <div class="wrapper-search-export">
 

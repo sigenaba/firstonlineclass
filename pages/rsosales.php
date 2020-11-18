@@ -7,7 +7,7 @@
     </div>
     <?php
     $conn = new mysqli('localhost', 'root', '', 'sunex') or die($conn->error);
-    $result = $conn->query("SELECT * FROM temp_sales_order") or die($conn->error); 
+    $result = $conn->query("SELECT * FROM ttemp_sales_order") or die($conn->error); 
 $num_per_page = 20;
 if (isset($_GET['page'])) {
     $page = $_GET['page'];
@@ -15,7 +15,7 @@ if (isset($_GET['page'])) {
     $page = 1;
 }
 $start_from = ($page - 1) * 20;
-$result = $conn->query("SELECT * FROM temp_sales_order order by rsoname asc limit $start_from,$num_per_page") or die($conn->error); ?>
+$result = $conn->query("SELECT * FROM ttemp_sales_order order by rsoname asc limit $start_from,$num_per_page") or die($conn->error); ?>
     <table class='table-sortable' border=1>
     <div class="wrapper-search-export">
 
@@ -81,7 +81,7 @@ if (isset($_POST['name'])) {
     </table>
     <div class="pager-section">
             <?php
-            $result1 = $conn->query("SELECT * FROM temp_sales_order") or die($conn->error);
+            $result1 = $conn->query("SELECT * FROM ttemp_sales_order") or die($conn->error);
             $total_records = mysqli_num_rows($result1);
             $total_pages = ceil($total_records / $num_per_page);
             if ($page > 1) {
@@ -101,5 +101,6 @@ if (isset($_POST['name'])) {
         </div>
 </main>
 <script src="../js/table.js"></script>
+<?php include "../includes/footer.php"; ?>
 
 </html>

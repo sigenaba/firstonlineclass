@@ -67,7 +67,7 @@
                 }
                 ?>
                 <div class="content5a contenta"><i class="fas fa-dollar-sign"></i>&nbsp;&nbsp;Marikina Sales Today<span class="contentnumber"><?php echo '&#x20B1;' . $finalgross; ?></span></div>
-                <div class="contentb content5b"><a href="salesreport.php">View Details</a></div>
+                <div class="contentb content5b"><a href="rsosales.php">View Details</a></div>
             </div>
 
             <div class="content6">
@@ -160,9 +160,7 @@
                         chart.draw(data, options);
                     }
                 </script>
-                <a href="rsosales.php">
                     <div id="piechart_3d"></div>
-                </a>
             </div>
             <iframe style="width: 100%; height: 500px;" src="http://us1.rssfeedwidget.com/getrss.php?time=1604911308721&amp;x=https%3A%2F%2Fdata.gmanetwork.com%2Fgno%2Frss%2Fscitech%2Fweather%2Ffeed.xml&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12">
                 Weather Report
