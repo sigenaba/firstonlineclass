@@ -45,6 +45,7 @@ if (isset($_POST['submit2'])) {
     $byer_id = $_POST['buyer'];
     $os = $_POST['os'];
     $remarks = $_POST['remarks'];
+    $remarks =mysqli_real_escape_string($con,$remarks);
     $status_id = 1;
     $sold_date = date("yy-m-d");
 
