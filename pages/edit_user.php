@@ -77,7 +77,14 @@ if (isset($_GET['cid'])) {
                 <br><br />
                 <label for="userole">User role</label>
                 <br />
-                <input type="text" id="userole" name="user_role" value="<?php echo $db_userrole; ?>" class="userinput" required>
+                <div class="selections">
+                <select name="user_role" id="" required>
+                <option value="<?php echo $db_userrole;?>" disable selected>Choose from the List</option>
+                <option value="admin">Admin</option>
+                <option value="subscriber">Subscriber</option>
+                </select>
+                </div>
+                
                 <br />
                 <input type="submit" name="submit" value="Update User">
             </form>

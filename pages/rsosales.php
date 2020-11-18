@@ -32,7 +32,7 @@ if (isset($_POST['name'])) {
 </div>
 
 <div class="exportclass">
-    <form method="post" action="../includes/db.php" id="btnexport">
+    <form method="post" action="../administrator/includes/db.php" id="btnexport">
         <input type="submit" name="export8" id="btn-success" value="export" />
         <label for="btn-success"><i class="fas fa-file-excel"></i></label>
     </form>

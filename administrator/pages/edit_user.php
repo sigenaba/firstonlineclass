@@ -77,7 +77,17 @@ if (isset($_GET['cid'])) {
                 <br><br />
                 <label for="userole">User role</label>
                 <br />
-                <input type="text" id="userole" name="user_role" value="<?php echo $db_userrole; ?>" class="userinput" required>
+                <div class="selections">
+                    <select name="user_role" style="width: 60%;" id="" class="form-control select2" class="option">
+                        <option value="<?php echo $db_userrole;?>" disable selected><?php echo $db_userrole;?></option>
+                        <?php
+                        if($db_userrole=='admin'){ ?>
+                            <option value="subscriber">subscriber</option>
+                        <?php }else{ ?>
+                            <option value="admin">admin</option>
+                        <?php }?>
+                    </select>
+                </div>
                 <br />
                 <input type="submit" name="submit" value="Update User">
             </form>
@@ -122,3 +132,11 @@ if (isset($_GET['cid'])) {
     </div>
 </div>
 <script src="../js/table.js"> </script>
+<script src="../css/jquery-3.1.1.js"></script>
+<script src="../css/select2.full.min.js"></script>
+<script>
+    $(function() {
+        //Initialize Select2 Elements
+        $('.select2').select2()
+    })
+</script>
