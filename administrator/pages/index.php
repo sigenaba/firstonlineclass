@@ -18,7 +18,7 @@
                     $sqty = $row['qty'];
                 }
                 ?>
-                <div class="content1a contenta"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Computer Unit (Sold)<span class="contentnumber"><?php echo $sqty; ?></span></div>
+                <div class="content1a contenta"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Computer Unit (Sold)<span class="contentnumber"><?php echo $sqty; ?></span></div>
                 <div class="contentb content1b"><a href="computer_menu.php?source=sold">View Details</a></div>
             </div>
             <div class="content content2">
@@ -38,7 +38,7 @@
                     $cqty = $row['qty'];
                 }
                 ?>
-                <div class="content3a contenta"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Computer Unit (Currenly Use)<span class="contentnumber"><?php echo $cqty; ?></span></div>
+                <div class="content3a contenta"><i class="fas fa-desktop"></i>&nbsp;&nbsp;Computer Unit (Currenly Use)<span class="contentnumber"><?php echo $cqty; ?></span></div>
                 <div class="contentb content3b"><a href="computer_menu.php?source=currently_use">View Details</a></div>
             </div>
             <div class="content content4">
@@ -66,7 +66,7 @@
                     $rqty = $row['qty'];
                 }
                 ?>
-                <div class="content5a contenta"><i class="far fa-clipboard"></i>&nbsp;&nbsp;Mar Sales Today<span class="contentnumber"><?php echo '&#x20B1;' . $finalgross; ?></span></div>
+                <div class="content5a contenta"><i class="fas fa-dollar-sign"></i>&nbsp;&nbsp;Marikina Sales Today<span class="contentnumber"><?php echo '&#x20B1;' . $finalgross; ?></span></div>
                 <div class="contentb content5b"><a href="salesreport.php">View Details</a></div>
             </div>
 
@@ -123,6 +123,16 @@
                     $rsobalassu = 'BALASSU';
                     $rsogross5 = 0;
                 }
+                $grossamount6 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'MIAN%'") or die($conn->error);
+                while ($grss6 = mysqli_fetch_assoc($grossamount6)) {
+                    $rsonancy = $grss6['rso'];
+                    $rsogross6 = $grss6['gross'];
+                }
+
+                if (mysqli_num_rows($grossamount6) < 1) {
+                    $rsonancy = 'MIAN';
+                    $rsogross6 = 0;
+                }
                 ?>
                 <script type="text/javascript">
                     google.charts.load("current", {
@@ -137,6 +147,7 @@
                             ['<?php echo $rsopep; ?>', <?php echo $rsogross2; ?>],
                             ['<?php echo $rsorochelle; ?>', <?php echo $rsogross4; ?>],
                             ['<?php echo $rsobalassu; ?>', <?php echo $rsogross5; ?>],
+                            ['<?php echo $rsonancy; ?>', <?php echo $rsogross6; ?>],
                             ['<?php echo $rsoother; ?>', <?php echo $rsogross3; ?>]
                         ]);
 

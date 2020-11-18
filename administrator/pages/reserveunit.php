@@ -27,7 +27,7 @@ $coun = mysqli_num_rows($result);
 
                 <div class="exportclass">
                     <form method="post" action="../includes/db.php" id="btnexport">
-                        <input type="submit" name="export7" id="btn-success" value="export" />
+                        <input type="submit" name="export6" id="btn-success" value="export" />
                         <label for="btn-success"><i class="fas fa-file-excel"></i></label>
                     </form>
                 </div>

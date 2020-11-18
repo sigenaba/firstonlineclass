@@ -26,6 +26,7 @@
             <li><a href="./gatepass_form.php"><i class="far fa-hand-lizard"></i> Gatepass</a>
                 <li><a href="./ot-form.php"><i class="fas fa-hourglass-half"></i> O.T Form</a>
                 <li><a href="./pull-out.php"><i class="fas fa-sign-out-alt"></i> Pull-out/Outgo</a>
+                <li><a href="./registration.php"><i class="fas fa-sign-out-alt"></i> Registration Form</a>
             </ul>
         </li>
         <li><a href="#"><i class="fas fa-cog"></i> Settings</a>

@@ -20,9 +20,9 @@
                 $aa = $crow['id'];
                 $bb = $crow['user'];
                 $cc = $crow['cpu'];
-                $ee = $crow['ram'];
-                $ff = $crow['hdd'];
-                $ee = $crow['mobo'];
+                $dd = $crow['ram'];
+                $ee = $crow['hdd'];
+                $ff = $crow['mobo'];
                 $gg = $crow['mac_address'];
                 $hh = $crow['os'];
                 $ii = $crow['buyer_id'];

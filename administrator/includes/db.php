@@ -171,7 +171,7 @@ if (isset($_POST["export5"])) {
             $output .= '
                     <tr>  
                          <td>' . $row["id"] . '</td>  
-                         <td>' . $row["status"] . '</td>  
+                         <td>' . $row["STATUS"] . '</td>  
                          <td>' . $row["cpu"] . '</td>  
                          <td>' . $row["hdd"] . '</td>  
                          <td>' . $row["ram"] . '</td>  
@@ -210,7 +210,7 @@ if (isset($_POST["export6"])) {
             $output .= '
                     <tr>  
                          <td>' . $row["id"] . '</td>  
-                         <td>' . $row["status"] . '</td>  
+                         <td>' . $row["STATUS"] . '</td>  
                          <td>' . $row["cpu"] . '</td>  
                          <td>' . $row["hdd"] . '</td>  
                          <td>' . $row["ram"] . '</td>  
@@ -249,7 +249,7 @@ if (isset($_POST["export7"])) {
             $output .= '
                     <tr>  
                          <td>' . $row["id"] . '</td>  
-                         <td>' . $row["status"] . '</td>  
+                         <td>' . $row["STATUS"] . '</td>  
                          <td>' . $row["cpu"] . '</td>  
                          <td>' . $row["hdd"] . '</td>  
                          <td>' . $row["ram"] . '</td>  

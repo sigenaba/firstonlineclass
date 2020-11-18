@@ -19,6 +19,7 @@
             while ($crow = mysqli_fetch_assoc($result2)) {
                 $aa = $crow['id'];
                 $bb = $crow['user'];
+                $bb = strtolower($bb);
                 $cc = $crow['cpu'];
                 $dd = $crow['mobo'];
                 $ee = $crow['mac_address'];
@@ -29,6 +30,7 @@
             while ($ro = mysqli_fetch_assoc($result3)) {
                 $rem = $ro['remarks'];
                 $upic = $ro['user'];
+                $upic = strtolower($upic);
             }
             $result4 = $con->query("SELECT * FROM buyer WHERE buyer_name='$bb'") or die($con->error);
             while ($roo = mysqli_fetch_assoc($result4)) {
