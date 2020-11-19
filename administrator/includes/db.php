@@ -269,8 +269,7 @@ if (isset($_POST["export7"])) {
 
 // from pages>rsosales.php
 if (isset($_POST["export8"])) {
-    $conn=new mysqli('localhost','root','','sunex')or die($conn->error);
-    $result8 = $conn->query("SELECT invoice,date,rsoname,barcode,items_description,price,qty,amount FROM temp_sales_order") or die($conn->error);
+    $result8 = $con->query("SELECT invoice,date,rsoname,barcode,items_description,price,qty,amount FROM ttemp_sales_order") or die($con->error);
     if (mysqli_num_rows($result8) > 0) {
         $output .= '
    <table class="table" bordered="1">  

@@ -37,6 +37,7 @@
                         <th>productkey</th>
                         <th>Location</th>
                         <th>remarks</th>
+                        <th>Action</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -47,13 +48,15 @@
                         $b = $mrow['user'];
                         $c = $mrow['product_key'];
                         $d = $mrow['locationn'];
-                        $e = $mrow['remarks']; ?>
+                        $e = $mrow['remarks'];
+                        $f = $mrow['id']; ?>
                         <tr>
                             <td><?php echo $a; ?></td>
                             <td><?php echo $b; ?></td>
                             <td><?php echo $c; ?></td>
                             <td><?php echo $d; ?></td>
                             <td><?php echo $e; ?></td>
+                            <td><a href="microsoftupdate.php?msid=<?php echo $f; ?>">Edit</a></td>
                         </tr>
                     <?php
                     } ?>

@@ -12,6 +12,7 @@
                 <li><a href="./add_entry.php"><i class="fas fa-desktop"></i> Add/Input</a>
                 <li><a href="./disposals.php"><i class="fas fa-recycle"></i> Disposals Monitoring</a>
                 <li><a href="./accessories.php"><i class="fas fa-keyboard"></i> Accessories Monitoring</a>
+                <li><a href="./microsoft.php"><i class="fas fa-keyboard"></i> Ms Office Monitoring</a>
                 <li><a href="./computer_menu.php"><i class="far fa-clipboard"></i> Computer Unit</a>
                 <li><a href="./gatepass.php"><i class="far fa-hand-lizard"></i> Gatepass Records</a>
                 <li><a href="./contact.php"><i class="far fa-hand-lizard"></i> Contact Us</a>

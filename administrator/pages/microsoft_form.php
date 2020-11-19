@@ -28,7 +28,7 @@
         $e = mysqli_real_escape_string($con, $e);
         $query = "INSERT INTO msoffice (";
         $query .= "date,user,product_key,";
-        $query .= "location,remarks";
+        $query .= "locationn,remarks";
         $query .= ")values(";
         $query .= "'$a','$b','$c','$d','$e'";
         $query .= ")";
@@ -99,7 +99,7 @@
                         $a = $mrow['date'];
                         $b = $mrow['user'];
                         $c = $mrow['product_key'];
-                        $d = $mrow['location'];
+                        $d = $mrow['locationn'];
                         $e = $mrow['remarks']; ?>
                         <tr>
                             <td><?php echo $a; ?></td>
