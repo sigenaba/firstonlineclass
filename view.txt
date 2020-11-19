@@ -8,3 +8,19 @@ select `a`.`id` AS `id`,`a`.`item_description` AS `description`,`b`.`id` AS `cat
 
 accessoriesview
 select `a`.`system_id` AS `id`,`c`.`buyer_name` AS `buyer_name`,`a`.`items_id` AS `items_id`,`a`.`qty` AS `qty`,`a`.`system_id` AS `system_id`,`b`.`item_description` AS `idesc`,`a`.`status` AS `STATUS` from ((`accessories_sold` `a` join `item_masterfile` `b`) join `buyer` `c`) where `a`.`items_id` = `b`.`id` and `a`.`buyer_id` = `c`.`id` and `a`.`status` <> 'tag'
+
+
+
+
+temp_sales
+select `a`.`transaction_id` AS `transaction_id`,`a`.`invoice_number` AS `invoice_number`,`a`.`cashier` AS `cashier`,`a`.`dealer_no` AS `dealer_no`,`a`.`date` AS `date`,`a`.`type` AS `type`,`a`.`amount` AS `amount`,`a`.`profit` AS `profit`,`a`.`due_date` AS `due_date`,`a`.`name` AS `name`,`a`.`balance` AS `balance`,`a`.`unread` AS `unread`,`a`.`location` AS `location`,`a`.`dlocation` AS `dlocation`,`a`.`time` AS `time`,`a`.`remarks` AS `remarks`,`b`.`dealer_name` AS `rso` from (`sunex`.`sales` `a` join `sunex`.`dealer` `b`) where ((`a`.`dealer_no` = `b`.`dealer_no`) and (`a`.`date` = curdate()))
+
+
+
+temp_sales_order
+ select `sunex`.`sales_order`.`transaction_id` AS `transaction_id`,`sunex`.`sales_order`.`invoice` AS `invoice`,`sunex`.`sales_order`.`product` AS `product`,`sunex`.`sales_order`.`qty` AS `qty`,`sunex`.`sales_order`.`amount` AS `amount`,`sunex`.`sales_order`.`profit` AS `profit`,`sunex`.`sales_order`.`product_code` AS `product_code`,`sunex`.`sales_order`.`gen_name` AS `gen_name`,`sunex`.`sales_order`.`name` AS `name`,`sunex`.`sales_order`.`price` AS `price`,`sunex`.`sales_order`.`discount` AS `discount`,`sunex`.`sales_order`.`date` AS `date`,`sunex`.`sales_order`.`location` AS `location`,`sunex`.`sales_order`.`status` AS `status`,`sunex`.`sales_order`.`stat` AS `stat` from `sunex`.`sales_order` where (`sunex`.`sales_order`.`date` = curdate())
+
+
+
+ttemp_sales_order
+select `a`.`invoice` AS `invoice`,`a`.`date` AS `date`,`b`.`rso` AS `rsoname`,`a`.`product` AS `barcode`,`a`.`name` AS `items_description`,`a`.`price` AS `price`,`a`.`qty` AS `qty`,`a`.`amount` AS `amount` from (`dbnice`.`temp_sales_order` `a` join `dbnice`.`temp_sales` `b`) where (`a`.`invoice` = `b`.`invoice_number`)

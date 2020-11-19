@@ -122,14 +122,14 @@
                     $rsobalassu = 'BALASSU';
                     $rsogross5 = 0;
                 }
-                $grossamount6 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'MIAN%'") or die($con->error);
+                $grossamount6 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like '%EBONA'") or die($con->error);
                 while ($grss6 = mysqli_fetch_assoc($grossamount6)) {
                     $rsonancy = $grss6['rso'];
                     $rsogross6 = $grss6['gross'];
                 }
 
                 if (mysqli_num_rows($grossamount6) < 1) {
-                    $rsonancy = 'MIAN';
+                    $rsonancy = 'NANCY';
                     $rsogross6 = 0;
                 }
                 ?>
