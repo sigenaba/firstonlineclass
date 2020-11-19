@@ -54,9 +54,8 @@
 
             <div class="content content5">
                 <?php
-                $conn = new mysqli('localhost', 'root', '', 'sunex') or die($conn->error);
                 $datetoday = date("yy-m-d");
-                $salesmar = $conn->query("SELECT sum(amount)as amount from temp_sales where date='$datetoday'") or die($conn->error);
+                $salesmar = $con->query("SELECT sum(amount)as amount from temp_sales where date='$datetoday'") or die($con->error);
                 while ($mgross = mysqli_fetch_assoc($salesmar)) {
                     $maramount = $mgross['amount'];
                     $finalgross = number_format($maramount);
@@ -73,7 +72,7 @@
             <div class="content6">
                 <?Php
                 $datetime = date("yy-m-d");
-                $grossamount = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALAGOT%'") or die($conn->error);
+                $grossamount = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALAGOT%'") or die($con->error);
                 while ($grss = mysqli_fetch_assoc($grossamount)) {
                     $rsobalagot = $grss['rso'];
                     $rsogross = $grss['gross'];
@@ -82,7 +81,7 @@
                     $rsobalagot = 'BALGOT';
                     $rsogross = 0;
                 }
-                $grossamount2 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'PEDRO%'") or die($conn->error);
+                $grossamount2 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'PEDRO%'") or die($con->error);
                 while ($grss2 = mysqli_fetch_assoc($grossamount2)) {
                     $rsopep = $grss2['rso'];
                     $rsogross2 = $grss2['gross'];
@@ -92,7 +91,7 @@
                     $rsopep = 'PEPING';
                     $rsogross2 = 0;
                 }
-                $grossamount3 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'LOGISTIC%'") or die($conn->error);
+                $grossamount3 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'LOGISTIC%'") or die($con->error);
                 while ($grss3 = mysqli_fetch_assoc($grossamount3)) {
                     // $rsoother = $grss3['rso'];
                     $rsoother = "TRANSACTED BY ALLAN";
@@ -103,7 +102,7 @@
                     $rsoother = 'LOGISTICS';
                     $rsogross3 = 0;
                 }
-                $grossamount4 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'TANGLAO%'") or die($conn->error);
+                $grossamount4 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'TANGLAO%'") or die($con->error);
                 while ($grss4 = mysqli_fetch_assoc($grossamount4)) {
                     $rsorochelle = $grss4['rso'];
                     $rsogross4 = $grss4['gross'];
@@ -113,7 +112,7 @@
                     $rsorochelle = 'ROCHELLE';
                     $rsogross4 = 0;
                 }
-                $grossamount5 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALASSU%'") or die($conn->error);
+                $grossamount5 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'BALASSU%'") or die($con->error);
                 while ($grss5 = mysqli_fetch_assoc($grossamount5)) {
                     $rsobalassu = $grss5['rso'];
                     $rsogross5 = $grss5['gross'];
@@ -123,7 +122,7 @@
                     $rsobalassu = 'BALASSU';
                     $rsogross5 = 0;
                 }
-                 $grossamount6 = $conn->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'MIAN%'") or die($conn->error);
+                $grossamount6 = $con->query("SELECT rso,sum(amount)as gross FROM temp_sales group by rso having rso like 'MIAN%'") or die($con->error);
                 while ($grss6 = mysqli_fetch_assoc($grossamount6)) {
                     $rsonancy = $grss6['rso'];
                     $rsogross6 = $grss6['gross'];
@@ -160,7 +159,7 @@
                         chart.draw(data, options);
                     }
                 </script>
-                    <div id="piechart_3d"></div>
+                <div id="piechart_3d"></div>
             </div>
             <iframe style="width: 100%; height: 500px;" src="http://us1.rssfeedwidget.com/getrss.php?time=1604911308721&amp;x=https%3A%2F%2Fdata.gmanetwork.com%2Fgno%2Frss%2Fscitech%2Fweather%2Ffeed.xml&amp;w=200&amp;h=500&amp;bc=333333&amp;bw=1&amp;bgc=transparent&amp;m=20&amp;it=true&amp;t=(default)&amp;tc=333333&amp;ts=15&amp;tb=transparent&amp;il=true&amp;lc=0000FF&amp;ls=14&amp;lb=false&amp;id=true&amp;dc=333333&amp;ds=14&amp;idt=true&amp;dtc=284F2D&amp;dts=12">
                 Weather Report

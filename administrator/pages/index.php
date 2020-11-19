@@ -55,7 +55,7 @@
             <div class="content content5">
                 <?php
                 $datetoday = date("yy-m-d");
-                $salesmar = $con->query("SELECT sum(amount)as amount from sunex.sales where date='$datetoday'") or die($conn->error);
+                $salesmar = $con->query("SELECT sum(amount)as amount from temp_sales where date='$datetoday'") or die($conn->error);
                 while ($mgross = mysqli_fetch_assoc($salesmar)) {
                     $maramount = $mgross['amount'];
                     $finalgross = number_format($maramount);
