@@ -71,3 +71,4 @@ $coun = mysqli_num_rows($result);
 </div>
 </div>
 <script src="../js/table.js"></script>
+<?php include "../includes/footer.php"; ?>

@@ -20,6 +20,7 @@
         <li><a href="#">Forms <i class="fas fa-arrow-alt-circle-down"></i></a>
             <ul class="submenu">
                 <li><a href="./gatepass_form.php"><i class="far fa-hand-lizard"></i> Gatepass</a>
+                <li><a href="./microsoft_form.php"><i class="far fa-hand-lizard"></i> Microsoft Office</a>
                 <li><a href="./ot-form.php"><i class="fas fa-hourglass-half"></i> O.T Form</a>
             </ul>
         </li>

@@ -13,7 +13,7 @@
 
         <h3 class="modal__heading">Specifications</h3>
         <?php
-        
+
         if (isset($_GET['curuseid'])) {
             $x = $_GET['curuseid'];
             $result2 = $con->query("SELECT * FROM systemunitlist WHERE id=$x") or die($con->error);
@@ -38,16 +38,16 @@
             $result4 = $con->query("SELECT * FROM buyer WHERE buyer_name like '$bb%'") or die($con->error);
             while ($roo = mysqli_fetch_assoc($result4)) {
                 $buyerphoto = $roo['buyer_photo'];
-                $buyerphoto =strtolower($buyerphoto);
+                $buyerphoto = strtolower($buyerphoto);
             }
         }
 
         ?>
         <?php
-        
+
         if (empty($buyerphoto)) { ?>
             <div class="curviewphoto">
-                <img src="../../images/uploaded_image/<?php echo $upic . '.png'; ?>" alt="">
+                <img src="../../images/uploaded_image/bg4.jpg" alt="">
             </div>
         <?php } else { ?>
             <div class="curviewphoto">

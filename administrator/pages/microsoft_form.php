@@ -4,7 +4,7 @@
 <main class="body">
     <br />
     <div class="breadcrumbs">
-        <h3>Add entry <?php echo "\ " . $source; ?></h3>
+        <h3>Microsoft Office Form</h3>
     </div>
     <br />
     <?php
@@ -17,21 +17,26 @@
     $start_from = ($page - 1) * 15;
     $result9 = $con->query("SELECT * FROM msoffice limit $start_from,$num_per_page") or die($con->error);
     if (isset($_POST['submit'])) {
-        $a = date("yy/m/d");
+        $a = date("yy-m-d");
         $b = $_POST['user'];
+        $b = mysqli_real_escape_string($con, $b);
         $c = $_POST['product_key'];
-        $d = $_POST['remarks'];
+        $c = mysqli_real_escape_string($con, $c);
+        $d = $_POST['location'];
+        $d = mysqli_real_escape_string($con, $d);
+        $e = $_POST['remarks'];
+        $e = mysqli_real_escape_string($con, $e);
         $query = "INSERT INTO msoffice (";
         $query .= "date,user,product_key,";
-        $query .= "remarks";
+        $query .= "location,remarks";
         $query .= ")values(";
-        $query .= "'$a','$b','$c','$d'";
+        $query .= "'$a','$b','$c','$d','$e'";
         $query .= ")";
         $result = mysqli_query($con, $query);
         if (!$result) {
             die("Query Failed! " . mysqli_error($con));
         }
-        header("location: add_entry.php?m2=5");
+        header("location: microsoft_form.php?m2=5");
     }
     ?>
     <div class="section-container">
@@ -44,7 +49,10 @@
                     <input type="text" name="user" placeholder="Enter Name" required>
                 </div>
                 <div class="selections">
-                    <input type="text" name="productkey" placeholder="Enter Product-key" required>
+                    <input type="text" name="product_key" placeholder="Enter Product-key" required>
+                </div>
+                <div class="selections">
+                    <input type="text" name="location" placeholder="Enter Location" required>
                 </div>
                 <div class="erem">
                     <textarea name="remarks" id="oho"></textarea>
@@ -85,30 +93,25 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>2020-10-10</td>
-                        <td>fhei02-3539dj3-fhf35</td>
-                        <td>Romeo</td>
-                        <td>Alright baby</td>
-                    </tr>
+                    <?php
+                    $msoffice = $con->query("SELECT * from msoffice") or die($con->error);
+                    while ($mrow = mysqli_fetch_assoc($msoffice)) {
+                        $a = $mrow['date'];
+                        $b = $mrow['user'];
+                        $c = $mrow['product_key'];
+                        $d = $mrow['location'];
+                        $e = $mrow['remarks']; ?>
+                        <tr>
+                            <td><?php echo $a; ?></td>
+                            <td><?php echo $b; ?></td>
+                            <td><?php echo $c; ?></td>
+                            <td><?php echo $d; ?></td>
+                            <td><?php echo $e; ?></td>
+                        </tr>
+                    <?php
+                    } ?>
                 </tbody>
             </table>
-
-            <div class="pager-section">
-                <?php
-                $result = $con->query("SELECT * FROM systemunitlist") or die($con->error);
-                $total_records = mysqli_num_rows($result);
-                $total_pages = ceil($total_records / $num_per_page);
-                if ($page > 1) {
-                    echo "<a href='add_entry.php?page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
-                }
-                for ($i = 1; $i <= $total_pages; $i++) {
-                    echo "<a href='add_entry.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
-                }
-                if ($i > $page) {
-                    echo "<a href='add_entry.php?page=" . ($page + 1) . "' id='pagerbutton'>Next</a>";
-                } ?>
-            </div>
             <br />
         </div>
     </div>
@@ -187,7 +190,7 @@
             Swal.fire({
                 icon: 'info',
                 title: 'Update Record',
-                text: 'Got it! Record updated successfully',
+                text: 'Got it! Record Added successfully',
                 confirmButtonColor: '#52C41A',
             })
         }
