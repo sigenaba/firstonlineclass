@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 18, 2020 at 04:18 AM
+-- Generation Time: Nov 20, 2020 at 12:46 AM
 -- Server version: 5.1.36
 -- PHP Version: 5.3.0
 
@@ -663,65 +663,13 @@ CREATE TABLE IF NOT EXISTS `activitylog` (
   `ip` varchar(255) NOT NULL,
   `session` varchar(255) NOT NULL,
   PRIMARY KEY (`activitylog`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=440 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=468 ;
 
 --
 -- Dumping data for table `activitylog`
 --
 
 INSERT INTO `activitylog` (`activitylog`, `user`, `action`, `activitydate`, `activitytime`, `device`, `ip`, `session`) VALUES
-(1, 'romeo', 'Logged In', '2020-10-24', '11:35:09', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284', '127.0.0.1', 'lupd83ls1hgs3r5akg9rvorlq6'),
-(2, 'romeo', 'Logged In', '2020-10-24', '11:37:59', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284', '127.0.0.1', 'lupd83ls1hgs3r5akg9rvorlq6'),
-(3, 'romeo', 'Logged In', '2020-10-24', '11:43:35', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.284', '127.0.0.1', 'lupd83ls1hgs3r5akg9rvorlq6'),
-(295, 'romeo', 'Logged Out', '20/11/11', '03:15:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(5, 'romeo', 'Logged In', '2020-10-24', '11:45:05', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(6, 'romeo', 'Logged Out', '2020-10-24', '11:45:10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(7, 'romeo', 'Logged Out', '2020-10-24', '11:45:10', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(280, 'romeo', 'Logged Out', '20/11/08', '09:23:22pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(281, 'romeo', 'Logged Out', '20/11/08', '09:23:22pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(193, 'romeo', 'Logged Out', '20/11/01', '08:49:34am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(282, 'romeo', 'Logged In', '20/11/09', '07:31:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(283, 'romeo', 'Logged Out', '20/11/09', '07:31:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(284, 'romeo', 'Logged Out', '20/11/09', '07:31:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(285, 'romeo', 'Logged In', '20/11/09', '07:34:31pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(286, 'romeo', 'Logged Out', '20/11/09', '10:41:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(287, 'romeo', 'Logged Out', '20/11/09', '10:41:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(288, 'romeo', 'Logged In', '20/11/09', '11:10:27pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(289, 'romeo', 'Logged Out', '20/11/09', '11:12:45pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(290, 'romeo', 'Logged Out', '20/11/09', '11:12:45pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(291, 'romeo', 'Logged In', '20/11/11', '03:09:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(292, 'romeo', 'Logged Out', '20/11/11', '03:09:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(293, 'romeo', 'Logged Out', '20/11/11', '03:09:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(294, 'romeo', 'Logged In', '20/11/11', '03:10:05pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(208, 'romeo', 'Logged In', '20/11/02', '02:35:09pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(209, 'romeo', 'Logged Out', '20/11/02', '02:37:52pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(210, 'romeo', 'Logged Out', '20/11/02', '02:37:52pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(211, 'romeo', 'Logged In', '20/11/02', '02:38:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'c17dijo8dpoi8hl3qu7ns3uau1'),
-(183, 'romeo', 'Logged Out', '20/10/31', '06:47:32pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(296, 'romeo', 'Logged Out', '20/11/11', '03:15:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(205, 'romeo', 'Logged In', '20/11/02', '07:25:26am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(206, 'romeo', 'Logged Out', '20/11/02', '08:15:21am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(207, 'romeo', 'Logged Out', '20/11/02', '08:15:21am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(194, 'romeo', 'Logged In', '20/11/01', '08:49:44am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(195, 'romeo', 'Logged Out', '20/11/01', '11:30:52am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(196, 'romeo', 'Logged Out', '20/11/01', '11:30:52am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(197, 'romeo', 'Logged In', '20/11/01', '01:04:43pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(198, 'romeo', 'Logged In', '20/11/01', '05:41:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(199, 'romeo', 'Logged Out', '20/11/01', '06:28:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(200, 'romeo', 'Logged Out', '20/11/01', '06:28:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(201, 'romeo', 'Logged In', '20/11/01', '08:14:09pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(202, 'romeo', 'Logged In', '20/11/01', '09:15:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(203, 'romeo', 'Logged Out', '20/11/01', '10:16:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(204, 'romeo', 'Logged Out', '20/11/01', '10:16:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(184, 'romeo', 'Logged Out', '20/10/31', '06:47:32pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(185, 'romeo', 'Logged In', '20/10/31', '07:39:28pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(186, 'romeo', 'Logged Out', '20/10/31', '09:23:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(187, 'romeo', 'Logged Out', '20/10/31', '09:23:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(188, 'romeo', 'Logged In', '20/10/31', '09:33:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(189, 'romeo', 'Logged Out', '20/10/31', '09:54:34pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(190, 'romeo', 'Logged Out', '20/10/31', '09:54:34pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(191, 'romeo', 'Logged In', '20/11/01', '08:49:29am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(192, 'romeo', 'Logged Out', '20/11/01', '08:49:34am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
 (55, 'romeo', 'Logged Out', '20/10/25', '01:46:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', '37bm9m7aqv3efkdp6p42hrr3g6'),
 (56, 'romeo', 'Logged Out', '20/10/25', '01:46:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', '37bm9m7aqv3efkdp6p42hrr3g6'),
 (57, 'romeo', 'Logged In', '20/10/25', '01:47:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
@@ -794,23 +742,8 @@ INSERT INTO `activitylog` (`activitylog`, `user`, `action`, `activitydate`, `act
 (124, '', 'Logged Out', '20/10/27', '07:03:45am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
 (125, 'romeo', 'Logged In', '20/10/28', '06:02:51am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
 (126, 'romeo', 'Logged Out', '20/10/28', '06:03:25am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(127, 'romeo', 'Logged Out', '20/10/28', '06:03:25am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
 (128, 'romeo', 'Logged In', '20/10/28', '06:05:19am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(129, 'romeo', 'Logged Out', '20/10/28', '06:59:40am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
 (130, 'romeo', 'Logged Out', '20/10/28', '06:59:40am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(131, 'romeo', 'Logged In', '20/10/28', '06:59:46am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(132, 'romeo', 'Logged Out', '20/10/28', '07:22:10am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(133, 'romeo', 'Logged Out', '20/10/28', '07:22:10am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(134, 'romeo', 'Logged In', '20/10/28', '07:22:20am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(135, 'romeo', 'Logged Out', '20/10/28', '07:42:33am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(136, 'romeo', 'Logged Out', '20/10/28', '07:42:33am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(137, 'romeo', 'Logged In', '20/10/28', '07:42:37am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(138, 'romeo', 'Logged Out', '20/10/28', '07:42:46am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(139, 'romeo', 'Logged Out', '20/10/28', '07:42:46am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(140, 'romeo', 'Logged In', '20/10/28', '07:42:51am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(141, 'romeo', 'Logged Out', '20/10/28', '08:24:47am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(142, 'romeo', 'Logged Out', '20/10/28', '08:24:47am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(143, 'romeo', 'Logged In', '20/10/28', '11:46:38am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36', '127.0.0.1', 'edst8o77i32ltmptqt8nvk1986'),
 (144, 'romeo', 'Logged Out', '20/10/28', '04:57:00pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36', '127.0.0.1', 'edst8o77i32ltmptqt8nvk1986'),
 (145, 'romeo', 'Logged Out', '20/10/28', '04:57:00pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4240.111 Safari/537.36', '127.0.0.1', 'edst8o77i32ltmptqt8nvk1986'),
 (146, 'romeo', 'Logged In', '20/10/28', '06:11:36pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
@@ -819,249 +752,7 @@ INSERT INTO `activitylog` (`activitylog`, `user`, `action`, `activitydate`, `act
 (149, 'romeo', 'Logged In', '20/10/28', '06:14:49pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
 (150, 'romeo', 'Logged In', '20/10/28', '06:17:44pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
 (151, 'romeo', 'Logged Out', '20/10/28', '06:21:13pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(152, 'romeo', 'Logged In', '20/10/28', '06:21:22pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(153, 'romeo', 'Logged In', '20/10/28', '07:35:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(154, 'romeo', 'Logged Out', '20/10/28', '07:35:25pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(155, 'romeo', 'Logged In', '20/10/28', '07:35:31pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(156, 'romeo', 'Logged Out', '20/10/28', '07:40:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(157, 'romeo', 'Logged Out', '20/10/28', '07:40:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(158, 'romeo', 'Logged In', '20/10/28', '07:40:08pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(159, 'romeo', 'Logged Out', '20/10/28', '08:22:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(160, 'romeo', 'Logged Out', '20/10/28', '08:22:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3'),
-(161, 'romeo', 'Logged In', '20/10/29', '05:30:47am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', '8mc029bculvpmc7mgmgcg34bk5'),
-(162, 'romeo', 'Logged Out', '20/10/29', '06:52:27am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', '8mc029bculvpmc7mgmgcg34bk5'),
-(163, 'romeo', 'Logged Out', '20/10/29', '06:52:27am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', '8mc029bculvpmc7mgmgcg34bk5'),
-(164, 'romeo', 'Logged In', '20/10/29', '07:52:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(165, 'romeo', 'Logged Out', '20/10/29', '09:25:26pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(166, 'romeo', 'Logged Out', '20/10/29', '09:25:26pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(167, 'romeo', 'Logged In', '20/10/30', '05:30:46am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(168, 'romeo', 'Logged Out', '20/10/30', '06:07:11am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(169, 'romeo', 'Logged Out', '20/10/30', '06:07:11am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(170, 'romeo', 'Logged In', '20/10/31', '05:30:52am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(171, 'romeo', 'Logged Out', '20/10/31', '06:19:02am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(172, 'romeo', 'Logged Out', '20/10/31', '06:19:02am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(173, 'romeo', 'Logged In', '20/10/31', '10:41:04am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(174, 'romeo', 'Logged Out', '20/10/31', '10:41:08am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(175, 'romeo', 'Logged In', '20/10/31', '10:41:12am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(176, 'romeo', 'Logged Out', '20/10/31', '12:03:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(177, 'romeo', 'Logged Out', '20/10/31', '12:03:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(178, '', 'Logged Out', '20/10/31', '12:03:59pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(179, '', 'Logged Out', '20/10/31', '12:03:59pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(180, 'romeo', 'Logged In', '20/10/31', '01:32:20pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(181, 'romeo', 'Logged Out', '20/10/31', '03:49:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(182, 'romeo', 'Logged In', '20/10/31', '04:18:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(212, 'romeo', 'Logged Out', '20/11/02', '04:02:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'c17dijo8dpoi8hl3qu7ns3uau1'),
-(213, 'romeo', 'Logged Out', '20/11/02', '04:02:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'c17dijo8dpoi8hl3qu7ns3uau1'),
-(214, 'romeo', 'Logged In', '20/11/02', '04:02:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', '2cff2teo8bh3diu32h6tqqq1l5'),
-(215, 'romeo', 'Logged Out', '20/11/02', '04:52:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', '2cff2teo8bh3diu32h6tqqq1l5'),
-(216, 'romeo', 'Logged Out', '20/11/02', '04:52:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', '2cff2teo8bh3diu32h6tqqq1l5'),
-(217, 'romeo', 'Logged In', '20/11/02', '06:32:09pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(218, 'romeo', 'Logged Out', '20/11/02', '06:43:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(219, 'romeo', 'Logged Out', '20/11/02', '06:43:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(220, 'romeo', 'Logged In', '20/11/02', '06:43:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(221, 'romeo', 'Logged In', '20/11/02', '06:48:26pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(222, 'romeo', 'Logged Out', '20/11/02', '06:52:49pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(223, 'romeo', 'Logged Out', '20/11/02', '06:52:49pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(224, 'romeo', 'Logged In', '20/11/02', '06:53:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(225, 'romeo', 'Logged Out', '20/11/02', '08:01:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(226, 'romeo', 'Logged Out', '20/11/02', '08:01:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(227, 'romeo', 'Logged In', '20/11/02', '08:01:52pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(228, 'romeo', 'Logged Out', '20/11/02', '08:04:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(229, 'romeo', 'Logged Out', '20/11/02', '08:04:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(230, 'romeo', 'Logged In', '20/11/02', '08:04:54pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'icducd4geuficr2onvvjdnh3c1'),
-(231, 'romeo', 'Logged Out', '20/11/02', '09:44:29pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'icducd4geuficr2onvvjdnh3c1'),
-(232, 'romeo', 'Logged Out', '20/11/02', '09:44:29pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'icducd4geuficr2onvvjdnh3c1'),
-(233, 'romeo', 'Logged In', '20/11/03', '06:25:35pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(234, 'romeo', 'Logged Out', '20/11/03', '06:57:18pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(235, 'romeo', 'Logged Out', '20/11/03', '06:57:18pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(236, 'romeo', 'Logged In', '20/11/03', '06:57:35pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(237, 'romeo', 'Logged Out', '20/11/03', '07:52:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(238, 'romeo', 'Logged Out', '20/11/03', '07:52:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(239, 'romeo', 'Logged In', '20/11/03', '09:12:39pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(240, 'romeo', 'Logged In', '20/11/03', '11:03:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(241, 'romeo', 'Logged Out', '20/11/03', '11:06:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(242, 'romeo', 'Logged Out', '20/11/03', '11:06:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(243, 'romeo', 'Logged In', '20/11/06', '06:03:27am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(244, 'romeo', 'Logged Out', '20/11/06', '06:55:59am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(245, 'romeo', 'Logged Out', '20/11/06', '06:55:59am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6');
-INSERT INTO `activitylog` (`activitylog`, `user`, `action`, `activitydate`, `activitytime`, `device`, `ip`, `session`) VALUES
-(246, 'romeo', 'Logged In', '20/11/07', '04:35:34pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(247, 'romeo', 'Logged Out', '20/11/07', '04:38:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(248, 'romeo', 'Logged Out', '20/11/07', '04:38:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(249, 'romeo', 'Logged In', '20/11/07', '04:40:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(250, 'romeo', 'Logged Out', '20/11/07', '04:40:48pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(251, 'romeo', 'Logged Out', '20/11/07', '04:40:48pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(252, 'romeo', 'Logged In', '20/11/07', '04:40:54pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(253, 'romeo', 'Logged Out', '20/11/07', '06:14:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(254, 'romeo', 'Logged Out', '20/11/07', '06:14:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(255, 'romeo', 'Logged In', '20/11/07', '09:31:18pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(256, 'romeo', 'Logged Out', '20/11/07', '11:31:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(257, 'romeo', 'Logged Out', '20/11/07', '11:31:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(258, 'romeo', 'Logged In', '20/11/08', '06:33:58am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(259, 'romeo', 'Logged Out', '20/11/08', '07:42:16am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(260, 'romeo', 'Logged Out', '20/11/08', '07:42:16am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(261, 'romeo', 'Logged In', '20/11/08', '09:59:34am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(262, 'romeo', 'Logged Out', '20/11/08', '12:54:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(263, 'romeo', 'Logged Out', '20/11/08', '12:54:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(264, 'romeo', 'Logged In', '20/11/08', '12:55:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(265, 'romeo', 'Logged Out', '20/11/08', '12:58:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(266, 'romeo', 'Logged Out', '20/11/08', '12:58:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(267, 'romeo', 'Logged In', '20/11/08', '06:35:28pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(268, 'romeo', 'Logged Out', '20/11/08', '06:50:51pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(269, 'romeo', 'Logged Out', '20/11/08', '06:50:51pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(270, 'romeo', 'Logged In', '20/11/08', '06:57:59pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(271, 'romeo', 'Logged Out', '20/11/08', '08:21:05pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(272, 'romeo', 'Logged Out', '20/11/08', '08:21:05pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(273, 'romeo', 'Logged In', '20/11/08', '08:21:20pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(274, 'romeo', 'Logged Out', '20/11/08', '08:21:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(275, 'romeo', 'Logged Out', '20/11/08', '08:21:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(276, 'romeo', 'Logged In', '20/11/08', '08:21:46pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'd1ickipao56j06pj9pi8k66947'),
-(277, 'romeo', 'Logged Out', '20/11/08', '09:10:35pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'd1ickipao56j06pj9pi8k66947'),
-(278, 'romeo', 'Logged Out', '20/11/08', '09:10:35pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'd1ickipao56j06pj9pi8k66947'),
-(279, 'romeo', 'Logged In', '20/11/08', '09:19:59pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.310', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(297, 'romeo', 'Logged In', '20/11/11', '03:15:10pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(298, 'romeo', 'Logged Out', '20/11/11', '03:58:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(299, 'romeo', 'Logged Out', '20/11/11', '03:58:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(300, 'romeo', 'Logged In', '20/11/11', '03:59:12pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(301, 'romeo', 'Logged Out', '20/11/11', '03:59:39pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(302, 'romeo', 'Logged Out', '20/11/11', '03:59:39pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(303, 'romeo', 'Logged In', '20/11/11', '03:59:45pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(304, 'romeo', 'Logged Out', '20/11/11', '04:00:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(305, 'romeo', 'Logged Out', '20/11/11', '04:00:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(306, 'romeo', 'Logged In', '20/11/11', '05:11:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(307, 'romeo', 'Logged Out', '20/11/11', '07:19:46pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(308, 'romeo', 'Logged Out', '20/11/11', '07:19:46pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(309, 'romeo', 'Logged In', '20/11/11', '07:19:51pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(310, 'romeo', 'Logged Out', '20/11/11', '07:21:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(311, 'romeo', 'Logged Out', '20/11/11', '07:21:33pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(312, 'romeo', 'Logged In', '20/11/11', '07:21:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(313, 'romeo', 'Logged Out', '20/11/11', '07:21:43pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(314, 'romeo', 'Logged Out', '20/11/11', '07:21:43pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(315, 'romeo', 'Logged In', '20/11/11', '07:21:50pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(316, 'romeo', 'Logged Out', '20/11/11', '08:23:47pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(317, 'romeo', 'Logged Out', '20/11/11', '08:23:47pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(318, 'romeo', 'Logged In', '20/11/11', '08:24:27pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(319, 'romeo', 'Logged Out', '20/11/11', '08:45:25pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(320, 'romeo', 'Logged Out', '20/11/11', '08:45:25pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(321, 'romeo', 'Logged In', '20/11/11', '09:16:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(322, 'romeo', 'Logged Out', '20/11/11', '10:21:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(323, 'romeo', 'Logged Out', '20/11/11', '10:21:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(324, 'romeo', 'Logged In', '20/11/12', '05:36:19pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(325, 'romeo', 'Logged Out', '20/11/12', '05:36:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(326, 'romeo', 'Logged Out', '20/11/12', '05:36:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(327, 'romeo', 'Logged In', '20/11/12', '05:37:34pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(328, 'romeo', 'Logged Out', '20/11/12', '05:38:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(329, 'romeo', 'Logged Out', '20/11/12', '05:38:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(330, 'romeo', 'Logged In', '20/11/12', '05:38:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(331, 'romeo', 'Logged Out', '20/11/12', '05:39:58pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(332, 'romeo', 'Logged Out', '20/11/12', '05:39:58pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(333, 'romeo', 'Logged In', '20/11/12', '05:40:08pm', 'Mozilla/5.0 (Linux; Android 6.0.1; Moto G (4)) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Mobile Safari/537.36', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(334, 'romeo', 'Logged Out', '20/11/12', '06:57:00pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(335, 'romeo', 'Logged Out', '20/11/12', '06:57:00pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(336, 'romeo', 'Logged In', '20/11/12', '06:57:08pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(337, 'romeo', 'Logged Out', '20/11/12', '07:31:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(338, 'romeo', 'Logged Out', '20/11/12', '07:31:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(339, 'romeo', 'Logged In', '20/11/12', '08:28:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(340, 'romeo', 'Logged Out', '20/11/12', '09:11:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(341, 'romeo', 'Logged Out', '20/11/12', '09:11:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(342, 'romeo', 'Logged In', '20/11/12', '09:11:47pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(343, 'romeo', 'Logged Out', '20/11/12', '09:19:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(344, 'romeo', 'Logged Out', '20/11/12', '09:19:53pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(345, 'romeo', 'Logged In', '20/11/12', '09:20:09pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(346, 'romeo', 'Logged Out', '20/11/12', '09:21:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(347, 'romeo', 'Logged Out', '20/11/12', '09:21:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(348, 'romeo', 'Logged In', '20/11/12', '09:22:18pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(349, 'romeo', 'Logged Out', '20/11/12', '09:27:17pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(350, 'romeo', 'Logged Out', '20/11/12', '09:27:17pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(351, 'romeo', 'Logged In', '20/11/12', '09:27:34pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(352, 'romeo', 'Logged In', '20/11/12', '09:29:21pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(353, 'demo', 'Logged In', '20/11/12', '09:32:10pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(354, 'demo', 'Logged Out', '20/11/12', '09:36:20pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(355, 'demo', 'Logged Out', '20/11/12', '09:36:20pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(356, 'romeo', 'Logged In', '20/11/12', '09:37:59pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(357, 'romeo', 'Logged Out', '20/11/12', '09:52:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(358, 'romeo', 'Logged Out', '20/11/12', '09:52:38pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(359, 'romeo', 'Logged In', '20/11/12', '09:52:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(360, 'romeo', 'Logged Out', '20/11/12', '09:53:27pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(361, 'romeo', 'Logged Out', '20/11/12', '09:53:27pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(362, 'romeo', 'Logged In', '20/11/12', '09:53:35pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(363, 'romeo', 'Logged Out', '20/11/12', '09:54:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(364, 'romeo', 'Logged Out', '20/11/12', '09:54:04pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(365, 'demo', 'Logged In', '20/11/12', '09:54:29pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(366, 'demo', 'Logged Out', '20/11/12', '09:54:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(367, 'demo', 'Logged Out', '20/11/12', '09:54:58pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(368, 'romeo', 'Logged In', '20/11/12', '09:55:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(369, 'romeo', 'Logged Out', '20/11/12', '09:56:50pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(370, 'romeo', 'Logged Out', '20/11/12', '09:56:50pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(371, 'demo', 'Logged In', '20/11/12', '10:02:08pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(372, 'demo', 'Logged Out', '20/11/12', '10:09:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(373, 'demo', 'Logged Out', '20/11/12', '10:09:41pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(374, 'romeo', 'Logged In', '20/11/13', '07:12:05am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(375, 'romeo', 'Logged Out', '20/11/13', '11:45:28am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(376, 'romeo', 'Logged Out', '20/11/13', '11:45:28am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(377, 'romeo', 'Logged In', '20/11/13', '03:44:19pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(378, 'romeo', 'Logged Out', '20/11/13', '03:49:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(379, 'romeo', 'Logged Out', '20/11/13', '03:49:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(380, 'romeo', 'Logged In', '20/11/13', '04:06:32pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(381, 'romeo', 'Logged Out', '20/11/13', '04:08:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(382, 'romeo', 'Logged Out', '20/11/13', '04:08:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(383, 'romeo', 'Logged In', '20/11/13', '04:21:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(384, 'romeo', 'Logged Out', '20/11/13', '04:42:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(385, 'romeo', 'Logged Out', '20/11/13', '04:42:42pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'keipke1g76fq1h3c60rn25m0e4'),
-(386, 'romeo', 'Logged In', '20/11/15', '12:13:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(387, 'romeo', 'Logged Out', '20/11/15', '12:24:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(388, 'romeo', 'Logged Out', '20/11/15', '12:24:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(389, 'romeo', 'Logged In', '20/11/15', '05:39:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(390, 'romeo', 'Logged Out', '20/11/15', '07:26:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(391, 'romeo', 'Logged Out', '20/11/15', '07:26:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(392, 'romeo', 'Logged In', '20/11/15', '08:01:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(393, 'romeo', 'Logged Out', '20/11/15', '09:31:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(394, 'romeo', 'Logged Out', '20/11/15', '09:31:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '127.0.0.1', 'soo4vgicbtmvj1mmhbhe2k82n6'),
-(395, 'romeo', 'Logged Out', '20/11/16', '11:09:51am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(396, 'romeo', 'Logged Out', '20/11/16', '11:09:51am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(397, 'romeo', 'Logged In', '20/11/16', '11:09:56am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(398, 'romeo', 'Logged In', '20/11/16', '11:31:43am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '103.5.7.35', 'dat74v2dlb9pvonoabukmmggk4'),
-(399, 'romeo', 'Logged Out', '20/11/16', '11:31:49am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '103.5.7.35', 'dat74v2dlb9pvonoabukmmggk4'),
-(400, 'romeo', 'Logged Out', '20/11/16', '11:31:49am', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '103.5.7.35', 'dat74v2dlb9pvonoabukmmggk4'),
-(401, 'romeo', 'Logged Out', '20/11/16', '12:29:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(402, 'romeo', 'Logged Out', '20/11/16', '12:29:06pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(403, 'romeo', 'Logged In', '20/11/16', '12:29:11pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(404, 'romeo', 'Logged Out', '20/11/16', '05:30:51pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(405, 'romeo', 'Logged Out', '20/11/16', '05:30:51pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(406, 'romeo', 'Logged In', '20/11/16', '06:01:57pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.22', 'bkfce2pcurdvpfb6rgb61opbv1'),
-(407, 'romeo', 'Logged Out', '20/11/16', '06:18:04pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.22', 'bkfce2pcurdvpfb6rgb61opbv1'),
-(408, 'romeo', 'Logged Out', '20/11/16', '06:18:04pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.22', 'bkfce2pcurdvpfb6rgb61opbv1'),
-(409, 'romeo', 'Logged In', '20/11/17', '01:20:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(410, 'romeo', 'Logged Out', '20/11/17', '01:21:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(411, 'romeo', 'Logged Out', '20/11/17', '01:21:07pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(412, 'romeo', 'Logged In', '20/11/17', '01:23:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(413, 'romeo', 'Logged Out', '20/11/17', '01:36:52pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(414, 'romeo', 'Logged Out', '20/11/17', '01:36:52pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(415, 'romeo', 'Logged In', '20/11/17', '01:36:57pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(416, 'romeo', 'Logged Out', '20/11/17', '01:56:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(417, 'romeo', 'Logged Out', '20/11/17', '01:56:55pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(418, 'romeo', 'Logged In', '20/11/17', '01:57:02pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(419, 'romeo', 'Logged Out', '20/11/17', '04:16:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(420, 'romeo', 'Logged Out', '20/11/17', '04:16:23pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(421, 'romeo', 'Logged In', '20/11/17', '04:20:03pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(422, 'romeo', 'Logged Out', '20/11/17', '04:40:31pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(423, 'romeo', 'Logged Out', '20/11/17', '04:40:31pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(424, 'romeo', 'Logged In', '20/11/17', '04:40:37pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(425, 'romeo', 'Logged Out', '20/11/17', '04:48:08pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(426, 'romeo', 'Logged Out', '20/11/17', '04:48:08pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(427, 'romeo', 'Logged In', '20/11/17', '04:48:16pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(428, 'romeo', 'Logged Out', '20/11/17', '04:57:29pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(429, 'romeo', 'Logged Out', '20/11/17', '04:57:29pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(430, 'vima', 'Logged In', '20/11/17', '04:57:40pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(431, 'vima', 'Logged Out', '20/11/17', '04:57:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(432, 'vima', 'Logged Out', '20/11/17', '04:57:48pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.323', '192.168.103.169', 'c79ia5m1m1jph8p79j4vatk1i6'),
-(433, 'vima', 'Logged In', '20/11/17', '04:58:56pm', 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:82.0) Gecko/20100101 Firefox/82.0', '192.168.103.99', 'r9et3tmj66kob2k74b4rnumm20'),
-(434, 'romeo', 'Logged In', '20/11/17', '05:29:26pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '103.5.7.35', 'vf46gqkcgjmhu05lmtbbvndqi0'),
-(435, 'romeo', 'Logged Out', '20/11/17', '05:32:29pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '103.5.7.35', 'vf46gqkcgjmhu05lmtbbvndqi0'),
-(436, 'romeo', 'Logged Out', '20/11/17', '05:32:29pm', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '103.5.7.35', 'vf46gqkcgjmhu05lmtbbvndqi0'),
-(437, 'romeo', 'Logged In', '20/11/18', '11:45:27am', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.174', 'pgu3ocq65bqlnqa9v4fmiqrhj4'),
-(438, 'romeo', 'Logged Out', '20/11/18', '11:50:46am', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.174', 'pgu3ocq65bqlnqa9v4fmiqrhj4'),
-(439, 'romeo', 'Logged Out', '20/11/18', '11:50:46am', 'Mozilla/5.0 (Linux; Android 8.1.0; vivo 1811 Build/OPM1.171019.026; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36 VivoBrowser/6.8.0.1', '136.158.11.174', 'pgu3ocq65bqlnqa9v4fmiqrhj4');
+(152, 'romeo', 'Logged In', '20/10/28', '06:21:22pm', 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36 OPR/71.0.3770.287', '127.0.0.1', 'picv3vo12buemfuo7vkbq393c3');
 
 -- --------------------------------------------------------
 
@@ -1317,7 +1008,7 @@ INSERT INTO `item_masterfile` (`id`, `item_description`, `cat_id`) VALUES
 (91, 'HANNS.G HL161ABB 16 IN', 7),
 (92, 'HANNS.G HSG1027 17 IN', 7),
 (93, 'HANNS.G HSG1125 16 IN', 7),
-(94, 'HANNS.G 19IN', 7),
+(94, 'LCD MONITOR (HANNS.G 19IN)', 7),
 (95, 'LG L1552S-SF 15 IN', 7),
 (96, 'LG L1753S5 17 IN', 7),
 (97, 'PHILIPS 193V5LSB2/71 19 IN', 7),
@@ -1406,7 +1097,7 @@ INSERT INTO `item_masterfile` (`id`, `item_description`, `cat_id`) VALUES
 (180, '8 GB & 4 GB', 14),
 (181, 'UPS (APC 650)', 14),
 (182, 'N/A', 15),
-(183, 'HP V5E94AA 19IN', 7),
+(183, 'LCD MONITOR (HP V5E94AA 19IN)', 7),
 (184, 'HANNS.G(HW191D) 19IN', 7),
 (185, 'AVR (ARTEC)', 1),
 (186, 'WIFI ADAPTER', 4),
@@ -1421,6 +1112,68 @@ INSERT INTO `item_masterfile` (`id`, `item_description`, `cat_id`) VALUES
 (195, 'ADAPTER (FOR MONITOR)', 11),
 (196, 'ASUS VS197(19IN)', 7),
 (197, 'SAMSUNG S19D300NY (19)', 7);
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `msoffice`
+--
+
+CREATE TABLE IF NOT EXISTS `msoffice` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `date` text NOT NULL,
+  `user` varchar(255) NOT NULL,
+  `product_key` varchar(255) NOT NULL,
+  `locationn` varchar(255) NOT NULL,
+  `remarks` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
+
+--
+-- Dumping data for table `msoffice`
+--
+
+INSERT INTO `msoffice` (`id`, `date`, `user`, `product_key`, `locationn`, `remarks`) VALUES
+(1, '2016-06-25', 'FX RETURN', '8XQCN-RTCF3-6X4JJ-V2FTK-M98YK', 'TACLOBAN', '<p>kay Stocksup/driver Tacloban na eto ngayon</p>'),
+(2, '2016-06-25', 'CASHIER', 'Q6NM2-8QGD7-TD2PK-F3FPM-FGDHX', 'TACLOBAN', 'gamit na eto ng CDO code 181 kay Ma''am Ana Marie na eto now(09-18-2020)'),
+(3, '2016-06-25', 'SDS RETURN', '48BV9-GNBYX-B3YY2-FHBK7-XD739', 'TACLOBAN', '<p>gamit na ni <strong>IDOL</strong></p>'),
+(4, '2016-06-25', 'I.T', 'NTWX6-MPR29-CQV49-RH8V3-PYT39', 'TACLOBAN', ''),
+(5, '2016-06-25', 'B.A', 'Y9HBJ-N4RG2-V8DFY-B2PYP-RVV39', 'TACLOBAN', 'sales CEBU'),
+(6, '2016-06-25', 'Fx Cebu Return', '3HCN4-RKWQ7-2K3T6-VY9GJ-WB6BK', 'CEBU', ''),
+(7, '2016-06-25', 'Sds Davao', '9XVD4-NGHBB-4GCFY-7VTCM-BBH39', 'DAVAO', 'Server RPRO'),
+(8, '2016-06-25', 'SDS Davao', '4DN78-B4J3C-PXRRK-CX3VR-844D9', 'DAVAO', 'Davao Sales'),
+(9, '2016-06-25', 'SDS Tarlac', 'P799N-3JHDB-4JW7M-272CQ-XHJYK', 'TARLAC', 'IDOL code #74'),
+(10, '2016-08-23', 'SDS CDO', 'NFCMF-FMGXQ-PYWGT-78MXD-PYT7X', 'CDO', ''),
+(11, '2016-08-23', 'FX CDO', 'MN9YM-D947R-GRQM2-MQT6V-VT9VX', 'CDO', ''),
+(12, '2016-09-22', 'SDS/FX BA', '2MHMN-PMDMQ-TGQBY-6B28H-WK8YK', 'GENSAN', 'Idol RPRO income/outgo'),
+(13, '2016-09-22', 'FX CASHIER', 'KRR2N-HXDH8-4F748-PQYJ2-9QBQ9', 'GENSAN', 'CODE # 81 cdo rpro server'),
+(14, '2016-09-22', 'SDS/FX Return', '9XGBN-9WDP2-YCFBX-463XR-3DBQ9', 'GENSAN', 'Davao Server_RPRO'),
+(15, '2016-09-23', 'SDS Cashier', '6N9DY-W967W-WHTM7-VTVD2-Q3WYK', 'GENSAN', 'Tacloban B.A 08-06-2019 code# 84'),
+(16, '2016-09-22', 'sds/fx IT', 'HGMNQ-M2GK7-Q3TKH-9FKHX-3RTBK', 'GENSAN', ''),
+(17, '2016-10-20', 'sds stocksup', '6XPRN-HGKWG-4RBT2-4XD3P-BTDHX', 'GENSAN', ''),
+(18, '2016-10-22', 'STOCKSUP', 'NM69V-37CF6-6K3PX-34VTH-8HV39', 'GENSAN', ''),
+(19, '2016-06-24', 'SDS RETURN', '49MTB-GN9F2-B7H2P-X8FJG-FVV39', 'ZAMBOANGA', 'kay Ma''am Precious na eto ngayon'),
+(20, '2016-06-24', 'FX RETURN', '4NQ3D-9DGRJ-3XQHT-4MJY6-YG9VX', 'ZAMBOANGA', 'kay Sir Mike CDO na eto ngayon'),
+(21, '2016-06-24', 'SDS/FX CASHIER', 'TKRJP-NQQP2-DVJQY-4YD9V-RGDHX', 'ZAMBOANGA', ''),
+(22, '2016-06-24', 'SDS/FX IT', 'VT8NC-H9JWQ-C2D48-FJYM4-HQWYK', 'ZAMBOANGA', ''),
+(23, '2016-06-24', 'SDS/FX BA', 'RQYH6-3NPJY-QY77K-J3H94-FC2MK', 'ZAMBOANGA', ''),
+(24, '2016-10-20', 'CASHIER', 'NTTJG-X9J6Y-786TK-66DB9-Y7V39', 'MARIKINA', ''),
+(25, '2016-10-20', 'I.T', 'DYNTJ-6WG8J-Q4H8B-6G8R3-RJRD9', 'MARIKINA', ''),
+(26, '2016-10-20', 'B.A', 'KNFQY-F2Q8K-KMR74-27TB8-PKCMK', 'MARIKINA', ''),
+(27, '2016-10-27', 'Tin-tin Accounting', 'NBGGM-48QYM-WDJ2K-PXDHR-VMH39', 'H.O', ''),
+(28, '2016-11-17', 'BDO', 'VH7XF-TNJCD-8P6MD-2MP87-PWGBK', 'ZAMBOANGA', ''),
+(29, '2016-12-14', 'Ma''am Grace Accounting', 'CNG6X-PHWG9-P8WFM-2XKKK-4JRD9', 'H.O', ''),
+(30, '2017-01-23', 'Ma''am Lhen Accounting', 'NPJ99-VFC44-WPGC3-P7RR8-J8GBK', 'H.O', 'Bacolod Server'),
+(31, '2017-03-17', 'SDS Marlon 1', 'MNP9T-73BV4-KJGYB-D6YTT-PDKVX', 'SDS LOGISTICS', 'b.a sunx Marikina/IT-Encoding'),
+(32, '2017-03-18', 'SDS Alan 3', 'NJV8Q-TDRW3-GWW9X-P33VT-MKMQ9', 'SDS LOGISTICS', ''),
+(33, '2017-03-18', 'SDS Liza 4', 'WNC4B-Y2C4W-QMTD8-2VCQP-J44D9', 'SDS LOGISTICS', 'kay sunx cashier Marikina na eto'),
+(34, '2017-03-18', 'SDS Carizal 2', 'NJ7KQ-8TQTT-GXM42-MYY2C-FX8YK', 'SDS LOGISTICS', 'sunex Cashier'),
+(35, '2017-04-05', 'SDS CEBU B.A', 'MGN3F-XK883-T627Q-6XT2X-M98YK', 'SDS CEBU', ''),
+(36, '2017-04-05', 'FX JOIE', 'QNKYQ-PDTFV-GBP4Q-9KHPM-JK8YK', 'H.O', 'Julie CNC'),
+(37, '2017-08-30', 'SDS/FX RETURN', 'Q6RNW-HKFYG-Y7YQX-JBBDK-W8GBK', 'CALOOCAN', ''),
+(38, '2017-08-30', 'SDS/FX CASHIER', 'YM8NW-J7DJM-WPCK8-T2RK2-YKMQ9', 'CALOOCAN', 'Davao Sunex Server'),
+(39, '2017-09-19', 'LIPA -RETURN', '6XMVC-N6FFJ-2BYYT-MHX39-3RTBK', 'LIPA', ''),
+(40, '2017-09-19', 'LIPA -IT', 'V2886-BNFBY-F7D8V-2C92G-6F4D9', 'DAVAO', 'Gina Davao');
 
 -- --------------------------------------------------------
 
@@ -1604,7 +1357,7 @@ INSERT INTO `system_unit` (`id`, `date_checked`, `location_id`, `status_id`, `cp
 (83, '2018-04-24', 1, 3, 35, 57, 173, 144, 159, 'Amman Aquino\nIP Address: 192.168.103.146\nMac Address: D8-CB-8A-31-B9-5B', '', NULL, 'AMMAN', 'FALSE', 0, ''),
 (84, '2018-04-24', 1, 3, 35, 57, 173, 107, 159, 'Mac Address: 9C-5C-8E-C2-30-C3\nMsOffice2016: 6N9DY-W967W-WHTM7-VTVD2-Q3WYK', 'TACLOBAN B.A', NULL, 'CAROL', 'FALSE', 0, ''),
 (85, '2018-04-26', 1, 1, 17, 72, 170, 114, 160, '', 'SALES OFFICER', NULL, 'BRIAN', 'FALSE', 4, '2018-04-26'),
-(86, '2019-05-02', 1, 3, 31, 80, 173, 123, 159, 'Mac Address: 10-BF-48-B6-17-24', 'CEBU SALES OFFICER', NULL, 'SALES OFFICER', 'FALSE', 0, ''),
+(86, '2019-05-02', 1, 3, 31, 80, 173, 123, 159, '<p>galing ng <strong>Cebu</strong>, kapupull-out lang this Nov 2020 sira daw</p><p>nakalagay eto now sa <strong>warehouse </strong>bago ka papasok nasa bandang right side sa ibabaw</p>', 'CEBU SALES OFFICER', '10-BF-48-B6-17-24', 'SALES OFFICER (Nejie)', 'FALSE', 0, '<p>galing ng <strong>Cebu</strong>, kapupull-out lang this Nov 2020 sira daw</p><p>nakalagay eto now sa <strong>warehouse </strong>bago ka papasok nasa bandang right side sa ibabaw</p>'),
 (87, '2018-04-26', 1, 1, 17, 72, 170, 114, 160, '', '', NULL, '', 'FALSE', 20, '2018-04-26'),
 (88, '2018-04-26', 1, 1, 11, 65, 169, 118, 160, '', '', NULL, '', 'FALSE', 20, '2018-04-26'),
 (89, '2018-04-26', 1, 1, 11, 80, 170, 118, 160, '', '', NULL, '', 'FALSE', 20, '2018-04-26'),
@@ -1776,6 +1529,67 @@ INSERT INTO `system_unit` (`id`, `date_checked`, `location_id`, `status_id`, `cp
 -- --------------------------------------------------------
 
 --
+-- Stand-in structure for view `temp_sales`
+--
+CREATE TABLE IF NOT EXISTS `temp_sales` (
+`transaction_id` int(11)
+,`invoice_number` varchar(100)
+,`cashier` varchar(100)
+,`dealer_no` varchar(255)
+,`date` date
+,`type` varchar(100)
+,`amount` varchar(100)
+,`profit` varchar(100)
+,`due_date` varchar(100)
+,`name` varchar(100)
+,`balance` varchar(100)
+,`unread` int(11)
+,`location` varchar(255)
+,`dlocation` varchar(255)
+,`time` varchar(255)
+,`remarks` varchar(255)
+,`rso` varchar(255)
+);
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `temp_sales_order`
+--
+CREATE TABLE IF NOT EXISTS `temp_sales_order` (
+`transaction_id` int(11)
+,`invoice` varchar(100)
+,`product` varchar(100)
+,`qty` varchar(100)
+,`amount` varchar(100)
+,`profit` varchar(100)
+,`product_code` varchar(150)
+,`gen_name` varchar(200)
+,`name` varchar(200)
+,`price` varchar(100)
+,`discount` varchar(100)
+,`date` date
+,`location` varchar(255)
+,`status` int(255)
+,`stat` varchar(255)
+);
+-- --------------------------------------------------------
+
+--
+-- Stand-in structure for view `ttemp_sales_order`
+--
+CREATE TABLE IF NOT EXISTS `ttemp_sales_order` (
+`invoice` varchar(100)
+,`date` date
+,`rsoname` varchar(255)
+,`barcode` varchar(100)
+,`items_description` varchar(200)
+,`price` varchar(100)
+,`qty` varchar(100)
+,`amount` varchar(100)
+);
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `user`
 --
 
@@ -1827,3 +1641,30 @@ CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW 
 DROP TABLE IF EXISTS `systemunitlist`;
 
 CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `systemunitlist` AS select `a`.`id` AS `id`,`a`.`sold_date` AS `sold_date`,`a`.`user` AS `user`,`b`.`status` AS `STATUS`,`c`.`item_description` AS `cpu`,`d`.`item_description` AS `hdd`,`e`.`item_description` AS `ram`,`f`.`item_description` AS `mobo`,`g`.`item_description` AS `os`,if(isnull(`h`.`buyer_name`),'none',`h`.`buyer_name`) AS `buyername`,`i`.`id` AS `buyer_id`,`a`.`mac_address` AS `mac_address`,`a`.`duplicate_data` AS `duplicate` from ((((((((`system_unit` `a` left join `system_status` `b` on((`b`.`id` = `a`.`status_id`))) left join `item_masterfile` `c` on((`c`.`id` = `a`.`cpu_id`))) left join `item_masterfile` `d` on((`d`.`id` = `a`.`hdd_id`))) left join `item_masterfile` `e` on((`e`.`id` = `a`.`ram_id`))) left join `item_masterfile` `f` on((`f`.`id` = `a`.`mobo_id`))) left join `item_masterfile` `g` on((`g`.`id` = `a`.`os_id`))) left join `buyer` `h` on((`h`.`id` = `a`.`buyer_id`))) left join `buyer` `i` on((`i`.`id` = `a`.`buyer_id`)));
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `temp_sales`
+--
+DROP TABLE IF EXISTS `temp_sales`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `temp_sales` AS select `a`.`transaction_id` AS `transaction_id`,`a`.`invoice_number` AS `invoice_number`,`a`.`cashier` AS `cashier`,`a`.`dealer_no` AS `dealer_no`,`a`.`date` AS `date`,`a`.`type` AS `type`,`a`.`amount` AS `amount`,`a`.`profit` AS `profit`,`a`.`due_date` AS `due_date`,`a`.`name` AS `name`,`a`.`balance` AS `balance`,`a`.`unread` AS `unread`,`a`.`location` AS `location`,`a`.`dlocation` AS `dlocation`,`a`.`time` AS `time`,`a`.`remarks` AS `remarks`,`b`.`dealer_name` AS `rso` from (`sunex`.`sales` `a` join `sunex`.`dealer` `b`) where ((`a`.`dealer_no` = `b`.`dealer_no`) and (`a`.`date` = curdate()));
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `temp_sales_order`
+--
+DROP TABLE IF EXISTS `temp_sales_order`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `temp_sales_order` AS select `sunex`.`sales_order`.`transaction_id` AS `transaction_id`,`sunex`.`sales_order`.`invoice` AS `invoice`,`sunex`.`sales_order`.`product` AS `product`,`sunex`.`sales_order`.`qty` AS `qty`,`sunex`.`sales_order`.`amount` AS `amount`,`sunex`.`sales_order`.`profit` AS `profit`,`sunex`.`sales_order`.`product_code` AS `product_code`,`sunex`.`sales_order`.`gen_name` AS `gen_name`,`sunex`.`sales_order`.`name` AS `name`,`sunex`.`sales_order`.`price` AS `price`,`sunex`.`sales_order`.`discount` AS `discount`,`sunex`.`sales_order`.`date` AS `date`,`sunex`.`sales_order`.`location` AS `location`,`sunex`.`sales_order`.`status` AS `status`,`sunex`.`sales_order`.`stat` AS `stat` from `sunex`.`sales_order` where (`sunex`.`sales_order`.`date` = curdate());
+
+-- --------------------------------------------------------
+
+--
+-- Structure for view `ttemp_sales_order`
+--
+DROP TABLE IF EXISTS `ttemp_sales_order`;
+
+CREATE ALGORITHM=UNDEFINED DEFINER=`root`@`localhost` SQL SECURITY DEFINER VIEW `ttemp_sales_order` AS select `a`.`invoice` AS `invoice`,`a`.`date` AS `date`,`b`.`rso` AS `rsoname`,`a`.`product` AS `barcode`,`a`.`name` AS `items_description`,`a`.`price` AS `price`,`a`.`qty` AS `qty`,`a`.`amount` AS `amount` from (`temp_sales_order` `a` join `temp_sales` `b`) where (`a`.`invoice` = `b`.`invoice_number`);

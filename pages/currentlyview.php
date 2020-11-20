@@ -42,13 +42,13 @@
 
         ?>
         <?php
-        if (empty($buyerphoto)) { ?>
+        if ($bb) { ?>
             <div class="curviewphoto">
-                <img src="../images/uploaded_image/bg4.jpg" alt="">
+                <img src="../images/uploaded_image/<?php echo $bb . '.png'; ?>" alt="">
             </div>
         <?php } else { ?>
             <div class="curviewphoto">
-                <img src="../images/uploaded_image/<?php echo $buyerphoto; ?>" alt="">
+                <img src="../images/uploaded_image/bg4.jpg" alt="">
             </div>
         <?php }
         ?>

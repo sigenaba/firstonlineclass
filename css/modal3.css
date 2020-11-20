@@ -1,139 +1,131 @@
-  
-   a:link,
-   a:visited{
-    text-decoration: none;
-   }
- .table-sortable{
-   font-size: 11px !important;
-   padding-top: 0 !important;
-   margin-top: 0 !important;
- }
-   .modal{
-    background-color: rgba(0,0,0, .8);
-    min-width:100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    overflow-y: scroll;
-    /* opacity: 0;
+a:link,
+a:visited {
+  text-decoration: none;
+}
+.table-sortable {
+  font-size: 11px !important;
+  padding-top: 0 !important;
+  margin-top: 0 !important;
+}
+.modal {
+  background-color: rgba(0, 0, 0, 0.8);
+  min-width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow-y: scroll;
+  /* opacity: 0;
     visibility: hidden; */
-    transition: all .5s;
-   }
- .section-modal{
-     padding: 0;
-     margin: 0;
- }
- 
- .gateupdate input[type="submit"]{
-   margin-bottom: 3px !important;
-   
- }
-   .modal__content{
-    min-width: 40%;
-    height: 90%;
-    background-color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 2em;
-    border-radius: 1em;
-    /* opacity: 0;
-    visibility: hidden; */
-    transition: all .5s;
-   }
- 
-   #modal:target{
-    opacity: 1;
-    visibility: visible;
-   }
- 
-   #modal:target .modal__content{
-    opacity: 1;
-    visibility: visible;
-   }
- 
-   .modal__close{
-    color: #363636;
-    font-size: 2em;
-    position: absolute;
-    top: .5em;
-    right: 1em;
-   }
-   .modal__close:hover{
-color: red;
-   }
- 
-   .modal__heading{
-    color: dodgerblue;
-    margin-bottom: 6px;
-   }
- 
-   .modal__paragraph{
-    width: 90% !important;
-    margin: 0 auto;
-   }
- 
- .modal-open{
+  transition: all 0.5s;
+}
+.section-modal {
+  padding: 0;
+  margin: 0;
+}
+
+.gateupdate input[type="submit"] {
+  margin-bottom: 3px !important;
+}
+.modal__content {
+  min-width: 40%;
+  height: 90%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  border-radius: 1em;
+  transition: all 0.5s;
+}
+
+#modal:target {
+  opacity: 1;
+  visibility: visible;
+}
+
+#modal:target .modal__content {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal__close {
+  color: #363636;
+  font-size: 2em;
+  position: absolute;
+  top: 0.5em;
+  right: 1em;
+}
+.modal__close:hover {
+  color: red;
+}
+
+.modal__heading {
+  color: dodgerblue;
+  margin-bottom: 6px;
+}
+
+.modal__paragraph {
+  width: 90% !important;
+  margin: 0 auto;
+}
+
+.modal-open {
   display: inline-block;
   color: dodgerblue;
   margin: 2em;
- }
- #selectdropdown18{
-   width: 70% !important;
- }
- #selectdropdown19{
-   width: 15% !important;
- }
+}
+#selectdropdown18 {
+  width: 70% !important;
+}
+#selectdropdown19 {
+  width: 15% !important;
+}
 
-
- #result-clear:hover{
+#result-clear:hover {
   background: red;
   font-weight: 600;
-  
-  }
-  .modal__viewparagraph{
-    position: relative;
-  }
-  .modal__viewparagraph p{
-    position: relative;
-    left: 30px;
-  }
-  
-  .curview{
-    color: red;
-  }
-  .modal__viewparagraph h4{
-    position: relative;
-    left: 0;
-    top: 0;
-    font-size: 15px;
-    font-weight: 500;
-    font-style: italic;  
-  }
-  .curviewphoto{
-    position: relative;
-    float: right;
-    margin-right: 30px;
-  }
-  .curviewphoto img{
-    height: 100px;
-    width: 100px;
-    border-radius: 25px;
-  }
-  .modal__viewparagraphp p:nth-last-of-type(1){
-    font-style: italic;
-  }
- @media (max-width: 360px){
-   
-   .modal__content{
-     min-width: 90%;
-     height: 90%;
+}
+.modal__viewparagraph {
+  position: relative;
+}
+.modal__viewparagraph p {
+  position: relative;
+  left: 30px;
+}
 
-   }
-   .modal__paragraph{
-     min-width: 100%;
-   }
- }
+.curview {
+  color: red;
+}
+.modal__viewparagraph h4 {
+  position: relative;
+  left: 0;
+  top: 0;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: italic;
+}
+.curviewphoto {
+  position: relative;
+  float: right;
+  margin-right: 30px;
+}
+.curviewphoto img {
+  height: 100px;
+  width: 100px;
+  border-radius: 25px;
+}
+.modal__viewparagraphp p:nth-last-of-type(1) {
+  font-style: italic;
+}
+@media (max-width: 360px) {
+  .modal__content {
+    min-width: 90%;
+    height: 90%;
+  }
+  .modal__paragraph {
+    min-width: 100%;
+  }
+}

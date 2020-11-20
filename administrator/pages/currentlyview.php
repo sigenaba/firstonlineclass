@@ -29,33 +29,33 @@
                 $hh = $crow['os'];
                 $ii = $crow['buyer_id'];
             }
-            $result3 = $con->query("SELECT user,remarks from system_unit where id=$x") or die($con->error);
-            while ($ro = mysqli_fetch_assoc($result3)) {
-                $rem = $ro['remarks'];
-                $upic = $ro['user'];
-                $upic = strtolower($upic);
-            }
-            $result4 = $con->query("SELECT * FROM buyer WHERE buyer_name like '$bb%'") or die($con->error);
-            while ($roo = mysqli_fetch_assoc($result4)) {
+
+            $result3 = $con->query("SELECT * FROM buyer WHERE buyer_name like '$bb%'") or die($con->error);
+            while ($roo = mysqli_fetch_assoc($result3)) {
                 $buyerphoto = $roo['buyer_photo'];
                 $buyerphoto = strtolower($buyerphoto);
             }
+        }
+        $result4 = $con->query("SELECT user,remarks from system_unit WHERE id=$x") or die($con->error);
+        while ($r4 = mysqli_fetch_assoc($result4)) {
+            $rem = $r4['remarks'];
         }
 
         ?>
         <?php
 
-        if (empty($buyerphoto)) { ?>
+        if ($bb) { ?>
             <div class="curviewphoto">
-                <img src="../../images/uploaded_image/bg4.jpg" alt="">
+                <img src="../../images/uploaded_image/<?php echo $bb . '.png'; ?>" alt="">
             </div>
         <?php } else { ?>
             <div class="curviewphoto">
-                <img src="../../images/uploaded_image/<?php echo $buyerphoto; ?>" alt="">
+                <img src="../../images/uploaded_image/bg4.jpg" alt="">
             </div>
         <?php }
         ?>
         <div class="modal__viewparagraph">
+            <?php echo "<h2>$bb</h2>"; ?>
             <br /><span class="curview">ID: </span><br />
             <p><?php echo $aa; ?><br /><br /></p>
             <span class="curview">USER: </span><br />
