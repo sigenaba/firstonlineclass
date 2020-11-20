@@ -444,6 +444,8 @@ small {
   top: -20px;
   left: 60px;
   border-bottom: 1px solid black;
+  padding: 0;
+  margin: 0;
   width: 240px;
 }
 .forname {
@@ -678,7 +680,7 @@ h4 {
 /* inputs   */
 
 /* ##################################################################################################   */
-#oho{
+#oho {
   width: 100%;
 }
 .soldupdate > input[type="submit"] {
@@ -1358,7 +1360,7 @@ input[type="submit"]:hover,
     padding: 7px 3px;
     margin: 0;
   }
-  #oho{
+  #oho {
     width: 300px;
   }
 }

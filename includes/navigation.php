@@ -19,7 +19,7 @@
                     <li><a href="./microsoft.php"><i class="fas fa-keyboard"></i> Microsoft Office</a>
                     <li><a href="./computer_menu.php"><i class="far fa-clipboard"></i> Computer Unit</a>
                     <li><a href="./gatepass.php"><i class="far fa-hand-lizard"></i> Gatepass Records</a>
-                    <li><a href="./sold-accessories.php"><i class="fas fa-hand-holding-usd"></i> Sold Accessories</a>
+                    <li><a href="./regform_record.php"><i class="fas fa-hand-holding-usd"></i> Registration Records</a>
             </ul>
         </li>
         <li><a href="#">Forms <i class="fas fa-arrow-alt-circle-down"></i></a>

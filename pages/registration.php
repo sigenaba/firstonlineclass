@@ -32,20 +32,19 @@
     <div class="form-wrapperr">
         <form action="" method="post">
             <div class="text-item">
-                <input type="text" placeholder="Enter your Surname" required>
+                <input type="text" placeholder="Enter your name i.e Dela Cruz, Juan S." required>
             </div>
             <div class="text-item">
-                <input type="text" placeholder="Enter your Middlename" required>
+                <input type="text" placeholder="Enter your Address" required>
             </div>
             <div class="text-item">
-                <input type="text" placeholder="Enter your FirstName" required>
+                <select name="province" id="">
+                    <option value="" disable selected>Choose Province</option>
+                    <option value="">Batangas</option>
+                    <option value="">Laguna</option>
+                </select>
             </div>
-            <div class="text-item">
-                <input type="text" placeholder="Enter your Full Address" required>
-            </div>
-            <div class="text-item">
-                <input type="text" placeholder="Enter your Spouse name" required>
-            </div><br />
+
             <center>
                 <div class="selections">
                     <input type="file" id="uploadimage" name="photo" required>
