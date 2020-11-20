@@ -62,7 +62,7 @@ $coun = mysqli_num_rows($result); ?>
                 <?php if ($coun > 0) {
                     while ($row = mysqli_fetch_assoc($result)) {
                         $a = $row['id'];
-                        $b = $row['status'];
+                        $b = $row['STATUS'];
                         $c = $row['buyername'];
                         $d = $row['cpu'];
                         $e = $row['hdd'];
@@ -102,9 +102,9 @@ $coun = mysqli_num_rows($result); ?>
                 echo "<a href='computer_menu.php?page=" . ($page - 1) . "' id='pagerbutton'>Prev</a>";
             }
             for ($i = 1; $i <= $total_pages; $i++) {
-                if($i==$page){
+                if ($i == $page) {
                     echo "<a style='background: #00FF00;' href='computer_menu.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
-                }else{
+                } else {
                     echo "<a href='computer_menu.php?page=" . $i . "' id='pagerbutton'>" . $i . "</a>";
                 }
             }
