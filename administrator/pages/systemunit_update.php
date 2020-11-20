@@ -44,8 +44,7 @@ if (isset($_POST['submit'])) {
         $query = "UPDATE system_unit SET ";
         $query .= "date_checked='$input_a', location_id=$input_b, status_id=$input_c,";
         $query .= "cpu_id=$input_d, hdd_id=$input_e, ram_id=$input_f, mobo_id=$input_g, remarks='$input_m',";
-        $query .= "designation='$input_i', mac_address='$input_j', os_id=$input_k, user='$input_l',";
-        $query .= "sold_date='$input_m'";
+        $query .= "designation='$input_i', mac_address='$input_j', os_id=$input_k, user='$input_l'";
         $query .= " WHERE id=$x";
         $result = mysqli_query($con, $query);
         if (!$result) {
