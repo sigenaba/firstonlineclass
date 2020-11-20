@@ -18,14 +18,25 @@
     .form-wrapperr input[type="text"],
     .form-wrapperr input[type="date"] {
         border: 1px solid gray;
-        font-size: 12px;
+        font-size: 15px;
         padding: 0;
         margin: 0;
         width: 100%;
     }
 
+    .form-wrapper input[type="date"] {
+        padding: 4px 0;
+        margin-bottom: 5px;
+    }
+
     .form-wrapperr input[type="date"] {
         font-size: 16px;
+    }
+
+    @media (max-width: 360px) {
+        .form-wrapperr .text-item {
+            width: 340px;
+        }
     }
 </style>
 <main class="body">
@@ -44,7 +55,7 @@
             </div>
             <div class="text-item">
                 <select name="province" id="selectdropdown21" style="width:100%;" autofocus class="form-control select2" class="option" required>
-                    <option value="" disabled selected>Choose Province</option>
+                    <option value="" disabled selected>Choose Province from the List</option>
                     <?php
                     $result3 = $con->query("SELECT * FROM province") or die($con->query);
                     while ($row = mysqli_fetch_assoc($result3)) {
@@ -57,7 +68,7 @@
             </div>
             <div class="text-item">
                 <select name="city" id="selectdropdown22" style="width: 100%;" autofocus class="form-control select2" class="option" required>
-                    <option value="" disabled selected>Choose City</option>
+                    <option value="" disabled selected>Choose City from the List</option>
                     <?php
                     $result3 = $con->query("SELECT * FROM city") or die($con->query);
                     while ($row = mysqli_fetch_assoc($result3)) {
@@ -71,8 +82,11 @@
             <div class="text-item">
                 <input type="text" placeholder="Enter your mobile number" required>
             </div>
+            <br />
             <div class="text-item">
-                <input type="date" placeholder="Birth of Date" required>
+                <label for="dob">Enter your Birth Date</label>
+                <br />
+                <input type="date" name="dob" required>
             </div>
             <div class="text-item">
                 <input type="text" placeholder="Enter your Gender" required>
