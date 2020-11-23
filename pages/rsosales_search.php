@@ -25,7 +25,7 @@
             <?php
             if (isset($_POST['name'])) {
                 $name = $_POST['name'];
-                header("location: rsosales.php?name=$name");
+                header("location: rsosales_search.php?name=$name");
             }
             ?>
             <div id="search">
@@ -92,3 +92,4 @@
 <script src="../js/table.js"></script>
 
 </html>
+<?php include "../includes/footer.php"; ?>
