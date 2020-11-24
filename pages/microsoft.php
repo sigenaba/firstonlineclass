@@ -24,8 +24,8 @@
                     </div>
 
                     <div class="exportclass">
-                        <form method="post" action="../includes/db.php" id="btnexport">
-                            <input type="submit" name="export8" id="btn-success" value="export" />
+                        <form method="post" action="../administrator/includes/db.php" id="btnexport">
+                            <input type="submit" name="export9" id="btn-success" value="export" />
                             <label for="btn-success"><i class="fas fa-file-excel"></i></label>
                         </form>
                     </div>
