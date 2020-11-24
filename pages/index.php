@@ -65,7 +65,7 @@
                     $rqty = $row['qty'];
                 }
                 ?>
-                <div class="content5a contenta"><i class="fas fa-dollar-sign"></i>&nbsp;&nbsp;Marikina Sales Today<span class="contentnumber"><?php echo '&#x20B1;' . $finalgross; ?></span></div>
+                <div class="content5a contenta"><i class="fas fa-dollar-sign"></i>&nbsp;&nbsp;Sales Online Today<span class="contentnumber"><?php echo '&#x20B1;' . $finalgross; ?></span></div>
                 <div class="contentb content5b"><a href="rsosales.php">View Details</a></div>
             </div>
 
