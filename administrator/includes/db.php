@@ -306,3 +306,36 @@ if (isset($_POST["export8"])) {
         echo $output;
     }
 }
+
+
+// from pages>rsosales.php
+if (isset($_POST["export9"])) {
+    $result8 = $con->query("SELECT date,user,product_key,locationn,remarks FROM msoffice") or die($con->error);
+    if (mysqli_num_rows($result8) > 0) {
+        $output .= '
+   <table class="table" bordered="1">  
+                <tr>
+                    <thead>  
+                        <th>Date</th>
+                        <th>Product Key</th>
+                        <th>Location</th>
+                        <th>Remarks</th>
+                    </thead>
+                </tr>
+            ';
+        while ($row = mysqli_fetch_array($result8)) {
+            $output .= '
+                    <tr>  
+                         <td>' . $row["date"] . '</td>  
+                         <td>' . $row["product_key"] . '</td>  
+                         <td>' . $row["locationn"] . '</td>  
+                         <td>' . $row["remarks"] . '</td>  
+                    </tr>
+            ';
+        }
+        $output .= '</table>';
+        header('Content-Type: application/xls');
+        header('Content-Disposition: attachment; filename=msoffice.xls');
+        echo $output;
+    }
+}
