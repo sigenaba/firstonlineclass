@@ -23,12 +23,12 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand mr-auto" href="./index.html">Ristorante</a>
+            <a class="navbar-brand mr-auto" href="./index.html"><img src="img/logo.png" alt="Ristorante" width="41" height="30"></a>
             <div class="collapse navbar-collapse" id="Navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item"><a class="nav-link" href="./index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Menu</a></li>
                     <li class="nav-item active"><a class="nav-link" href="./aboutus.html"><i class="fa fa-info fa-lg"></i> About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Menu</a></li>
                     <li class="nav-item"><a class="nav-link" href="./contactus.html"><i class="fa fa-address-card fa-lg"></i> Contact</a></li>
                 </ul>
             </div>
@@ -42,7 +42,8 @@
                     <h1>Ristorante con Fusion</h1>
                     <p>We take inspiration from the World's best cuisines, and create a unique fusion experience. Our lipsmacking creations will tickle your culinary senses!</p>
                 </div>
-                <div class="col-12 col-sm">
+                <div class="col-12 col-sm align-self-center">
+                    <img src="img/logo.png" alt="img-fluid">
                 </div>
             </div>
         </div>
@@ -60,21 +61,47 @@
 			</div>
         </div>
     </div>
-    <div class="container">
 
+    <div class="container">
         <div class="row row-content">
-            <div>
+            <div class="col-sm-6">
                 <h2>Our History</h2>
                 <p>Started in 2010, Ristorante con Fusion quickly established itself as a culinary icon par excellence in Hong Kong. With its unique brand of world fusion cuisine that can be found nowhere else, it enjoys patronage from the A-list clientele in Hong Kong.  Featuring four of the best three-star Michelin chefs in the world, you never know what will arrive on your plate the next time you visit us.</p>
                 <p>The restaurant traces its humble beginnings to <em>The Frying Pan</em>, a successful chain started by our CEO, Mr. Peter Pan, that featured for the first time the world's best cuisines in a pan.</p>
             </div>
-            <div>
+            <div class="col-sm">
+                <div class="card">
+                    <h3 class="card-header bg-primary text-white">Facts At a Glance</h3>
+                    <div class="card-body">
+                        <dl class="row">
+                            <dt class="col-6">Started</dt>
+                            <dd class="col-6">3 Feb. 2013</dd>
+                            <dt class="col-6">Major Stockholder</dt>
+                            <dd class="col-6">Don Joaquin</dd>
+                            <dt class="col-6">Employees</dt>
+                            <dd class="col-6">50</dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mt-3">
+                <div class="card card-body bg-light">
+                 <blockquote class="blockquote">
+                  <p class="mb-0">You better cut the pizza in four pieces because I'm not hungry enough to eat six.</p>
+                  <footer class="blockquote-footer">Yogi Berra,
+                   <cite title="Source Title">
+                    The Wit and Wisdom of Yogi Berra...
+                   </cite> 
+                  </footer>
+                 </blockquote>
+                </div>
             </div>
         </div>
+    
 
 
-        <div class="row row-content">
-            <div>
+        <div class="row row-content">   
+                <div>
                 <h2>Corporate Leadership</h2>
                 <h3>Peter Pan <small>Chief Epicurious Officer</small></h3>
                 <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
@@ -85,10 +112,46 @@
                 <h3>Alberto Somayya <small>Executive Chef</small></h3>
                 <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
             </div>
-       </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-12 col-sm-9">
+                <h2>Facts &amp; Figures</h2>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>&nbsp;</th>
+                                <th>2013</th>
+                                <th>2014</th>
+                                <th>2015</th>
+                                <th>2016</th>
+                                <th>2017</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Employees</th>
+                                <td>15</td>
+                                <td>300</td>
+                                <td>$234,000</td>
+                                <td>$20,000</td>
+                                <td>$1,000</td>
+                            </tr>
+                            <tr>
+                                <th>Guest</th>
+                                <td>6</td>
+                                <td>12</td>
+                                <td>100</td>
+                                <td>500</td>
+                                <td>1500</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
 
     </div>
-
     <footer class="footer">
         <div class="container">
             <div class="row">             
@@ -130,7 +193,11 @@
            </div>
         </div>
     </footer>
-    
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 
 </html>
